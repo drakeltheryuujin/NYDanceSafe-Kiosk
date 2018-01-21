@@ -18,17 +18,7 @@ $ npm install
 # npm
 $ npm start
 ```
-
-### Scripts
-- **npm run deploy** or **yarn deploy**: Bundles the application into `.build/dist`.
-
-- **npm run start_prod** or **yarn start_prod**: Starts production server, make sure you have already deployed the application.
-
-- **npm run clean** or **yarn clean**: Removes the bundled files.
-
-Enable node-autostart
-
-## Documentation
+### Enable Node Autostart
 'Enabling autostart' means to make the OS run a certain command at logon of the user who 'enabled the autostart' via a program:
 ```
   autostart enable -n "DanceSafeKiosk" -p /home/me/kiosk-loopback -c "npm start"
@@ -42,3 +32,9 @@ to see if it is enabled, and:
   autostart disable -n "DanceSafeKiosk"
 ```
 to disable it.
+
+### Scripts
+- **npm run clean** or **yarn clean**: Removes the bundled files.
+
+Enable node-autostart
+
