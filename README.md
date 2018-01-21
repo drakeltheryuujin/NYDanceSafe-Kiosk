@@ -1,26 +1,22 @@
-# loopback-redux-react-boilerplate
+# DanceSafe Kiosk
 
-A boilerplate for a Redux-React application using LoopBack
+A kiosk for DanceSafe harmreduction information
 
 ### Get Started
 - **Clone this repository or use npm**
 ```bash
-$ git clone https://github.com/tngan/loopback-redux-react-boilerplate.git
+$ git clone https://github.com/drakeltheryuujin/NYDanceSafe-Kiosk
 ```
 
 - **Install dependencies specified in package.json**  
 ```bash
 # npm
 $ npm install
-# yarn
-$ yarn install
 ```
-- **Start the server (default port is set to 3000)**
+- **Start the server (default port is set to 3001)**
 ```bash
 # npm
 $ npm start
-# yarn
-$ yarn start
 ```
 
 ### Scripts
@@ -30,15 +26,19 @@ $ yarn start
 
 - **npm run clean** or **yarn clean**: Removes the bundled files.
 
-### Built-in example
-A simple 'Hello World' Redux-React application is included in this boilerplate. You can find those files under `/client`.
+Enable node-autostart
 
-Hot reloading is only applied in development mode. In production mode, the code base is pre-compiled and placed under `.build/dist`.
-
-### License
-
-[MIT](LICENSE)
-
-### Copyright
-
-Copyright (C) 2016 Tony Ngan, released under the MIT License.
+## Documentation
+'Enabling autostart' means to make the OS run a certain command at logon of the user who 'enabled the autostart' via a program:
+```
+  autostart enable -n "DanceSafeKiosk" -p /home/me/kiosk-loopback -c "npm start"
+```
+to enable,
+```
+  autostart check -n "DanceSafeKiosk"
+```
+to see if it is enabled, and:
+```
+  autostart disable -n "DanceSafeKiosk"
+```
+to disable it.
