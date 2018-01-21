@@ -1,5 +1,5 @@
 {
-  "name": "loopback-redux-react-boilerplate",
+  "name": "dancesafe-kiosk",
   "version": "1.0.2",
   "main": "server/server.js",
   "scripts": {
