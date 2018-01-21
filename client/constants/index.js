@@ -10,4 +10,4 @@
  * import { MY_CONSTANT, MY_CONSTANT_1 } from './constants'; 
  *
  */
- export const WELCOME_TEXT = 'Thanks for using loopback-redux-react-boilerplate';
+export const WELCOME_TEXT = 'Welcome';

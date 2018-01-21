@@ -1,0 +1,34 @@
+{
+  "name": "drug",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "image": {
+      "type": "string",
+      "default": "no-image.jpg"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "drugImage": {
+      "type": "hasOne",
+      "model": "molecule",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

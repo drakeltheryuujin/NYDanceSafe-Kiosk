@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "drug": {
+    "dataSource": "db",
+    "public": true
+  },
+  "molecule": {
+    "dataSource": "local-storage",
+    "public": true
   }
 }

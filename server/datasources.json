@@ -1,6 +1,19 @@
 {
   "db": {
     "name": "db",
+    "file": "./common/AllDrugs.json",
+    "connector": "memory"
+  },
+  "local-storage": {
+    "name": "local-storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./common/local-storage"
+  },
+  "name-db": {
+    "name": "name-db",
+    "localStorage": "",
+    "file": "./common/AllDrugNames.json",
     "connector": "memory"
   }
 }
