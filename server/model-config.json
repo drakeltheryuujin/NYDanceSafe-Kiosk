@@ -32,12 +32,28 @@
     "dataSource": "db",
     "public": false
   },
+  "molecule": {
+    "dataSource": "local-storage",
+    "public": true
+  },
   "drug": {
     "dataSource": "db",
     "public": true
   },
-  "molecule": {
-    "dataSource": "local-storage",
+  "category": {
+    "dataSource": "db",
+    "public": true
+  },
+  "drugEffect": {
+    "dataSource": "db",
+    "public": true
+  },
+  "drugPwEffect": {
+    "dataSource": "db",
+    "public": true
+  },
+  "reagent": {
+    "dataSource": "db",
     "public": true
   }
 }

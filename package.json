@@ -37,6 +37,7 @@
     "loopback-component-explorer": "^4.2.0",
     "loopback-component-storage": "^3.3.1",
     "node-autostart": "^3.0.3",
+    "psql": "0.0.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",

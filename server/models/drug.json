@@ -1,0 +1,71 @@
+{
+  "name": "drug",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "aliases": {
+      "type": [
+        "string"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "advice": {
+      "type": "string"
+    },
+    "bioAvailability": {
+      "type": "string"
+    },
+    "dose": {
+      "type": "object"
+    },
+    "duration": {
+      "type": "object"
+    },
+    "onset": {
+      "type": "object"
+    },
+    "note": {
+      "type": "string"
+    },
+    "afterEffects": {
+      "type": "string"
+    },
+    "combos": {
+      "type": "object"
+    },
+    "sources": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "drugEffects": {
+      "type": "hasMany",
+      "model": "drugEffect",
+      "foreignKey": ""
+    },
+    "drugPwEffects": {
+      "type": "hasMany",
+      "model": "drugPwEffect",
+      "foreignKey": ""
+    },
+    "categories": {
+      "type": "hasAndBelongsToMany",
+      "model": "category",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
