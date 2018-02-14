@@ -1,5 +1,5 @@
 {
-  "name": "Drug",
+  "name": "Substance",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -51,19 +51,16 @@
   "validations": [],
   "relations": {
     "drugEffects": {
-      "type": "hasMany",
-      "model": "DrugEffect",
-      "foreignKey": "drugId"
+      "type": "hasAndBelongsToMany",
+      "model": "DrugEffect"
     },
     "drugPwEffects": {
-      "type": "hasMany",
-      "model": "DrugPwEffect",
-      "foreignKey": "drugId"
+      "type": "hasAndBelongsToMany",
+      "model": "DrugPwEffect"
     },
     "drugCategories": {
-      "type": "hasMany",
-      "model": "Category",
-      "foreignKey": "drugId"
+      "type": "hasAndBelongsToMany",
+      "model": "Category"
     }
   },
   "acls": [],

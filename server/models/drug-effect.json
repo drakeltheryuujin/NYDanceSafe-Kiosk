@@ -1,5 +1,5 @@
 {
-  "name": "drugEffect",
+  "name": "DrugEffect",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

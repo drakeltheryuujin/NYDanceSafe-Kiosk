@@ -1,5 +1,5 @@
 {
-  "name": "reagent",
+  "name": "Reagent",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -19,8 +19,8 @@
   "relations": {
     "drugCompatibilities": {
       "type": "hasMany",
-      "model": "drug",
-      "foreignKey": ""
+      "model": "Drug",
+      "foreignKey": "reagentId"
     }
   },
   "acls": [],

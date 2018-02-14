@@ -1,12 +1,7 @@
 {
   "db": {
     "name": "db",
-    "file": "./common/AllDrugs.json",
-    "connector": "memory"
-  },
-  "psql": {
-    "name": "psql",
-    "connector": "psql"
+    "connector": "postgresql"
   },
   "local-storage": {
     "name": "local-storage",
