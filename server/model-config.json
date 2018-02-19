@@ -55,5 +55,9 @@
   "Substance": {
     "dataSource": "db",
     "public": true
+  },
+  "DrugInfoCard": {
+    "dataSource": "db",
+    "public": true
   }
 }

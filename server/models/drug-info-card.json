@@ -1,0 +1,32 @@
+{
+  "name": "DrugInfoCard",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "displayUrl": {
+      "type": "object",
+      "required": true
+    },
+    "previewUrl": {
+      "type": "string",
+      "required": true,
+      "default": "/client/src/assets/no-image.jpg"
+    },
+    "downloadUrl": {
+      "type": "string",
+      "required": true,
+      "default": "/client/src/assets/no-pdf.pdf"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

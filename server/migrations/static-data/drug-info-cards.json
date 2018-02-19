@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "2c(x)",
+    "prettyName": "2cs",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/2cs.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/2cs.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/2cs.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/2cs.pdf"
+  },
+  {
+    "id": 2,
+    "name": "Alcohol",
+    "prettyName": "alcohol",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/alcohol.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/alcohol.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/alcohol.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/alcohol.pdf"
+  },
+  {
+    "id": 3,
+    "name": "Amphetamines",
+    "prettyName": "amphetamines",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/amphetamines.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/amphetamines.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/amphetamines.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/amphetamines.pdf"
+  },
+  {
+    "id": 4,
+    "name": "Cannabis",
+    "prettyName": "cannabis",    
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/cannabis.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/cannabis.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/cannabis.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/cannabis.pdf"
+  },
+  {
+    "id": 5,
+    "name": "Cathinones",
+    "prettyName": "cathinones",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/cathinones.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/cathinones.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/cathinones.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/cathinones.pdf"
+  },
+  {
+    "id": 6,
+    "name": "Cocaine",
+    "prettyName": "cocaine",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/cocaine.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/cocaine.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/cocaine.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/cocaine.pdf"
+  },
+  {
+    "id": 7,
+    "name": "DMT",
+    "prettyName": "dmt",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/dmt.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/dmt.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/dmt.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/dmt.pdf"
+  },
+  {
+    "id": 8,
+    "name": "DO(x)",
+    "prettyName": "dox",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/dox.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/dox.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/dox.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/dox.pdf"
+  },
+  {
+    "id": 9,
+    "name": "DXM",
+    "prettyName": "dxm",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/dxm.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/dxm.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/dxm.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/dxm.pdf"
+  },
+  {
+    "id": 10,
+    "name": "GHB",
+    "prettyName": "ghb",    
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/ghb.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/ghb.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/ghb.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/ghb.pdf"
+  },
+  {
+    "id": 11,
+    "name": "JWH",
+    "prettyName": "jwh",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/jwh.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/jwh.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/jwh.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/jwh.pdf"
+  },
+  {
+    "id": 12,
+    "name": "Ketamine",
+    "prettyName": "ketamine",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/ketamine.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/ketamine.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/ketamine.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/ketamine.pdf"
+  },
+  {
+    "id": 13,
+    "name": "LSD",
+    "prettyName": "lsd",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/lsd.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/lsd.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/lsd.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/lsd.pdf"
+  },
+  {
+    "id": 14,
+    "name": "MDA",
+    "prettyName": "mda",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/mda.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/mda.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/mda.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/mda.pdf"
+  },
+  {
+    "id": 15,
+    "name": "MDMA",
+    "prettyName": "mdma",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/mdma.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/mdma.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/mdma.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/mdma.pdf"
+  },
+  {
+    "id": 16,
+    "name": "MXE",
+    "prettyName": "mxe",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/mxe.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/mxe.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/mxe.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/mxe.pdf"
+  },
+  {
+    "id": 17,
+    "name": "Nicotine",
+    "prettyName": "nicotine",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/nicotine.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/nicotine.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/nicotine.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/nicotine.pdf"
+  },
+  {
+    "id": 18,
+    "name": "Nitrites",
+    "prettyName": "nitrites",
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/nitrites.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/nitrites.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/nitrites.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/nitrites.pdf"
+  },
+  {
+    "id": 19,
+    "name": "Nitrous",
+    "prettyName": "nitrous",    
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/nitrous.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/nitrous.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/nitrous.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/nitrous.pdf"
+  },
+  {
+    "id": 20,
+    "name": "Psilocybin",
+    "prettyName": "psilocybin",    
+    "displayUrl": {
+      "page1": "/client/src/assets/images/page-display/drug-info-cards/en/front/psilocybin.jpg",
+      "page2": "/client/src/assets/images/page-display/drug-info-cards/en/back/psilocybin.jpg"
+  
+    },
+    "previewUrl": "/client/src/assets/images/previews/drug-info-cards/en/back/psilocybin.jpg",
+    "downloadUrl": "/client/src/assets/download/drug-info-cards/en/psilocybin.pdf"
+  }
+]

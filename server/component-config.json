@@ -1,5 +1,9 @@
 {
   "loopback-component-explorer": {
     "mountPath": "/explorer"
+  },
+  "../lib": {
+    "enableRest": false,
+    "migrationsDir": "migration/psql"
   }
 }

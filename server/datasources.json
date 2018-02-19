@@ -1,5 +1,7 @@
 {
   "db": {
+    "port": 5432,
+    "database": "dskiosk",
     "name": "db",
     "connector": "postgresql"
   },
