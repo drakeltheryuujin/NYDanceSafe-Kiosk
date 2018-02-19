@@ -6,6 +6,8 @@ module.exports = function(app) {
   const json = require(`${appRoot}/server/migrations/static-data/drug-info-cards.json`);
   const DrugInfoCard = app.models.DrugInfoCard;
 
+  DrugInfoCard.destroyAll()
+
   async.each(json, function( detail, nextDetail ) {
     DrugInfoCard.find( {}, {}, function( err, drugInfoCard ) {
       if (err) return nextDetail(err);
