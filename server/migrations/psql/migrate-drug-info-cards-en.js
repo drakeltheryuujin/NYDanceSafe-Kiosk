@@ -1,5 +1,6 @@
 var appRoot = process.cwd();
 var async = require("async");
+var _ = require("lodash");
 
 module.exports = {
   up: function(dataSource, next) {
@@ -11,7 +12,7 @@ module.exports = {
       DrugInfoCard.find( {}, {}, function( err, drugInfoCard ) {
         if (err) return nextDetail(err);
         if (_.isEmpty(detail)) return nextDetail();
-        drugInfoCard.create({
+        DrugInfoCard.create({
           name: detail.name,
           prettyName: detail.prettyName,
           displayUrl: detail.displayUrl,
