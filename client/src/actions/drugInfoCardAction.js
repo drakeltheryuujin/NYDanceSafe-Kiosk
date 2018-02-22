@@ -1,12 +1,20 @@
 import axios from 'axios';
 
-function getDrugInfoCards() {
-    const url = 'http://localhost:3001/api/DrugInfoCards'
-    const request = axios.get(url)
-    debugger
+function getDrugInfoCardsSuccess(response) {
   return {
     type:'GET_DRUG_INFO_CARDS',
-    payload: request
+    payload: response
+  }
+}
+
+function getDrugInfoCards() {
+  const url = 'http://localhost:3001/api/DrugInfoCards'
+  return dispatch => {
+    axios.get(url)
+      .then((response) => {
+        console.log(response.data);
+        dispatch(getDrugInfoCardsSuccess(response.data))
+      })
   }
 }
 

@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import drugInfoCards from './drugInfoCardReducer';
+import drugInfoCardReducer from './drugInfoCardReducer';
 
 
 const rootReducer = combineReducers({
-  drugInfoCards: drugInfoCards
+  drugInfoCards: drugInfoCardReducer
 })
 
 

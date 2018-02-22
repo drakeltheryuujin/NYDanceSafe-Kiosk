@@ -1,19 +1,10 @@
-const drugInfoCardReducer = (state=[] ,action) => {
-
-
+export default function(state=[], action) {
   switch (action.type) {
     case 'GET_DRUG_INFO_CARDS':
-      return {
-        info: action.payload.data
-      }
+      return action.payload;
     default:
-      return state
+      return state;
   }
 
 }
 
-
-
-
-
-export default drugInfoCardReducer

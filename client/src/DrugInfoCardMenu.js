@@ -6,13 +6,10 @@ import './assets/css/MainMenu.css';
 class DrugInfoCardMenu extends Component {
 
   render() {
-    // const drugInfoCard = this.props
-    const drugInfoCard = ["test1", "test2", "test3", "test4"]
-
-    const InfoCards = drugInfoCard.map((drugName)=> {
+    const InfoCards = this.props.drug.map((drug)=> {
       return (
-        <li id={drugName}>
-          <Link to={drugName}>{drugName}</Link>
+        <li id={drug.id}>
+          <Link to={drug.name}>{drug.name}</Link>
         </li>
       )
     })
