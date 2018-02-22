@@ -23,6 +23,3 @@ ReactDOM.render(
 );
 
 registerServiceWorker();
-
-// Object {}dispatch: (action)getState: getState()replaceReducer: replaceReducer(nextReducer)subscribe: subscribe(listener)Symbol(observable): observable()__proto__: Object
-

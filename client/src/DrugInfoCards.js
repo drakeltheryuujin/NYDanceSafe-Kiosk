@@ -16,7 +16,7 @@ class Home extends Component {
       const info = this.props.drugInfoCards
       return <Menu drug={info}/>;
     } else {
-      return '<ul className="navigation">Loading</ul>';
+      return '<ul className="navigation"><li>No Information to Load</li></ul>';
     }
   }
   render() {

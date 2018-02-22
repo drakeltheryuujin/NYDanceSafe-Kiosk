@@ -6,7 +6,23 @@ import './assets/css/MainMenu.css';
 class DrugInfoCardMenu extends Component {
 
   render() {
-    const InfoCards = this.props.drug.map((drug)=> {
+
+    function resortDrugsByName(a, b) {
+      const drugA = a.prettyName.toUpperCase();
+      const drugB = b.prettyName.toUpperCase();
+
+      let resort = 0;
+      if (drugA > drugB) {
+        resort = 1;
+      } else if (drugA < drugB) {
+        resort = -1;
+      }
+      return resort;
+    }
+
+    let infoCards = this.props.drug
+    infoCards = infoCards.sort(resortDrugsByName);
+    infoCards = infoCards.map((drug)=> {
       return (
         <li id={drug.id}>
           <Link to={drug.name}>{drug.name}</Link>
@@ -16,7 +32,7 @@ class DrugInfoCardMenu extends Component {
 
     return(
       <ul className="navigation">
-        {InfoCards}
+        {infoCards}
       </ul>
     )
   }
