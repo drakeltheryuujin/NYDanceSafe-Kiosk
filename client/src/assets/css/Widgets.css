@@ -1,0 +1,152 @@
+/*---------------------------------------------------------
+ 1. Background Video
+-------------------------------------------------------- */
+.video-background {
+  background: #000;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+/*---------------------------------------------------------
+ 2. Info Pages
+-------------------------------------------------------- */
+
+.share-info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  z-index: 9998;
+}
+
+.share-info ul li {
+  float: left;
+}
+
+.share-info ul li a {
+  border-bottom: 1px solid #afb0b0;
+  border-left: 1px solid #afb0b0;
+  color: #afb0b0;
+  padding: 15px;
+  display: block;
+}
+
+.share-info ul li a:hover, .share-info ul li a:focus, .share-info ul li a:active{
+  color: #323232;
+  background-color: #f9da2b;
+  border-color: #323232;
+}
+.share-info ul li a .fa {
+  margin-right: 20px;
+}
+
+/*---------------------------------------------------------
+ 3. Modal
+-------------------------------------------------------- */
+
+.share-modal {
+  background-color: rgba(255,255,255,.8);
+  border: 1px solid #afb0b0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px 30px 85px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 50%;
+  height: 60%;
+}
+
+.preview-image {
+  overflow: hidden;
+  border: 1px solid #afb0b0;
+}
+
+.preview-image img {
+  width: 100%;
+  display: block;
+}
+
+.share-modal-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  border-top: 1px solid #afb0b0;
+}
+.share-modal-footer p.copyright-text {
+  margin: 40px 0;
+  font-size: 13px;
+}
+.share-modal-footer p.copyright-text a {
+  color: #5f6d7e;
+}
+.share-modal-footer p.copyright-text a:hover {
+  color: #6cc0f7;
+}
+.social-media-options .fa-fw {
+  font-size: 44px;
+}
+
+.social-media-options input[type="radio"] + .fa,
+.social-media-options input[type="radio"] + label > .fa { cursor: pointer; }
+
+/* Unchecked */
+.social-media-options input[type="radio"] + .fa-facebook-square:before,
+.social-media-options input[type="radio"] + label > .fa-facebook-square:before { content: "\f082"; color: #afb0b0; }
+
+.social-media-options input[type="radio"] + .fa-twitter-square:before,
+.social-media-options input[type="radio"] + label > .fa-twitter-square:before { content: "\f081"; color: #afb0b0; }
+
+.social-media-options input[type="radio"] + .fa-instagram:before,
+.social-media-options input[type="radio"] + label > .fa-instagram:before { content: "\f16d"; color: #afb0b0; }
+
+.social-media-options input[type="radio"] + .fa-youtube-square:before,
+.social-media-options input[type="radio"] + label > .fa-twitter-youtube:before { content: "\f166"; color: #afb0b0; }
+
+/* Checked */
+.social-media-options input[type="radio"]:checked + .fa-facebook-square:before,
+.social-media-options input[type="radio"]:checked + label > .fa-facebook-square:before { content: "\f082"; color: #ff9900; }
+
+.social-media-options input[type="radio"]:checked + .fa-twitter-square:before,
+.social-media-options input[type="radio"]:checked + label > .fa-twitter-square:before { content: "\f081"; color: #ff9900; }
+
+.social-media-options input[type="radio"]:checked + .fa-instagram:before,
+.social-media-options input[type="radio"]:checked + label > .fa-instagram:before { content: "\f16d"; color: #ff9900; }
+
+.social-media-options input[type="radio"]:checked + .fa-youtube-square:before,
+.social-media-options input[type="radio"]:checked + label > .fa-youtube-square:before { content: "\f166"; color: #ff9900; }
+

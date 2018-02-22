@@ -1,0 +1,23 @@
+.main-navigation li {
+  display: block;
+}
+.main-navigation li a {
+  padding: 15px 40px;
+  display: block;
+  color: #353535;
+  font-size: 24px;
+}
+.main-navigation li a i {
+  margin-right: 15px;
+  font-size: 24px;
+}
+.main-navigation li a:hover {
+  background: #e5e6e6;
+}
+.main-navigation li a.active {
+  background: #f9da2b;
+  color: #323232;
+}
+.main-navigation li a.active:hover {
+  background: #f9da2b;
+}

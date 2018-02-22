@@ -1,0 +1,16 @@
+.social-icons {
+  display: block;
+  padding: 20px;
+  width: 100%;
+}
+.social-icons li {
+  display: inline-block;
+  margin-right: 9px;
+}
+.social-icons a {
+  font-size: 44px;
+  color: #323232;
+}
+.social-icons a:hover {
+  color: #7a7c7c;
+}

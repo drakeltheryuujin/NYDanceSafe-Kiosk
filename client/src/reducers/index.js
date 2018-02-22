@@ -1,10 +1,9 @@
-import { combineReducers } from 'redux'
-import {reducer as formReducer } from 'redux-form';
-// import someReducer from './someReducer.js'
+import { combineReducers } from 'redux';
+import drugInfoCards from './drugInfoCardReducer';
 
 
 const rootReducer = combineReducers({
-  // card: someReducer
+  drugInfoCards: drugInfoCards
 })
 
 

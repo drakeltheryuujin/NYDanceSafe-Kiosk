@@ -1,0 +1,20 @@
+.top-section {
+  padding: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+}
+.profile-image img {
+  width: 100%;
+}
+
+h3.profile-title {
+  margin-bottom: 5px;
+  color: #323232;
+  font-size: 18px;
+  font-family: 'robotobold';
+  text-align: center;
+}
