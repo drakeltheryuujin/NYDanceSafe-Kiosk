@@ -7,12 +7,7 @@ import './assets/css/MainMenu.css';
 class DrugInfoCardMenu extends Component {
   constructor(props){
     super(props);
-    this.sendData = this.sendData.bind(this);
-    this.sendData = this.sendData.bind(this);
     this.background = this.props.background;
-  }
-  sendData(e, data){
-   	this.props.action(data.displayUrl)
   }
 
   render() {
@@ -22,7 +17,7 @@ class DrugInfoCardMenu extends Component {
     infoCards = infoCards.map((drug)=> {
       return (
         <li id={drug.id}>
-          <Link to={`${url}/${drug.prettyName}`} onClick={ (e) => {this.sendData(e, drug)} }>{drug.name}</Link>
+          <Link to={`${url}/${drug.prettyName}`} onClick={ () => {this.props.updateDrug(drug)} }>{drug.name}</Link>
         </li>
       )
     })

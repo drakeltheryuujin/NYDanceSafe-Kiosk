@@ -4,7 +4,8 @@ import './assets/css/bootstrap.min.css';
 import './assets/css/font-awesome.css';
 import './assets/css/App.css';
 import Home from './Home';
-import DrugInfoCards from './containers/DrugInfoCardContainer';
+import DrugInfoCards from './containers/drugInfoCardContainer';
+import DrugInfoCards from './containers/textModalContainer';
 
 const HydrationNutrition = ({ match }) => (
   <div>

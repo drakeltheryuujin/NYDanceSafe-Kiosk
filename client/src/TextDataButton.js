@@ -5,7 +5,7 @@ class TextDataButton extends Component {
 
   render() {
     return(
-      <li><Link to="/text"><i className="fa fa-phone-square"></i>Text this info</Link></li>
+      <li><Link to={`${this.props.url}/text`}  onClick={ () => this.props.action() }><i className="fa fa-phone-square"></i>Text this info</Link></li>
     )
   }
 }

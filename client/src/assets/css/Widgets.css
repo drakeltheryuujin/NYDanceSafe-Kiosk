@@ -74,8 +74,15 @@
 /*---------------------------------------------------------
  3. Modal
 -------------------------------------------------------- */
+.share-modal.modal-visibility-false {
+  display: none;
+}
 
+.share-modal.modal-visibility-true {
+  display: block;
+}
 .share-modal {
+  display: none;
   background-color: rgba(255,255,255,.8);
   border: 1px solid #afb0b0;
   position: fixed;
