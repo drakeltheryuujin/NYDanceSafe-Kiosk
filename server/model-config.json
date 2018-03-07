@@ -59,5 +59,17 @@
   "DrugInfoCard": {
     "dataSource": "db",
     "public": true
+  },
+  "DrugInfoCardOriginal": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Twilio": {
+    "dataSource": "twilio",
+    "public": true
+  },
+  "TextMessage": {
+    "dataSource": "db",
+    "public": true
   }
 }

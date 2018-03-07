@@ -1,4 +1,5 @@
 import axios from 'axios';
+import apiUrl from '../utility/util.js';
 
 function getDrugInfoCardsSuccess(response) {
   return {
@@ -8,7 +9,7 @@ function getDrugInfoCardsSuccess(response) {
 }
 
 function getDrugInfoCards() {
-  const url = 'http://localhost:3001/api/DrugInfoCards'
+  const url = apiUrl + '/DrugInfoCards'
   return dispatch => {
     axios.get(url)
       .then((response) => {

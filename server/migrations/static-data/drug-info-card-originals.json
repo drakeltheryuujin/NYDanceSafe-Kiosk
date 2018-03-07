@@ -1,0 +1,174 @@
+[
+  {
+    "id": 1,
+    "name": "2cb",
+    "prettyName": "2cb",
+    "description": "2cb Drug Info Card",
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/2cs.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/2cs.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/2cs.pdf"
+  },
+  {
+    "id": 2,
+    "name": "Alcohol",
+    "prettyName": "alcohol",
+    "description": "Alcohol Drug Info Card",
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/alcohol.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/alcohol.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/alcohol.pdf"
+  },
+  {
+    "id": 3,
+    "name": "Speed",
+    "prettyName": "Speed",
+    "description": "Amphetamines Drug Info Card",
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/speed.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/speed.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/speed.pdf"
+  },
+  {
+    "id": 4,
+    "name": "Marijuana",
+    "prettyName": "marijuana",    
+    "description": "Marijuana Drug Info Card",
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/cannabis.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/cannabis.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/cannabis.pdf"
+  },
+  {
+    "id": 6,
+    "name": "Cocaine",
+    "prettyName": "cocaine",
+    "description": "Cocaine Drug Info Card",
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/cocaine.jpg",
+      "page2": "/images/page-display/drug-info-cards/old/back/cocaine.jpg"
+  
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/cocaine.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1dGV7xHjFmV8pT_MriDbsjS8NyY0PZBD4"
+  },
+  {
+    "id": 7,
+    "name": "DMT",
+    "prettyName": "dmt",
+    "description": "DMT Drug Info Card",
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/dmt.jpg",
+      "page2": "/images/page-display/drug-info-cards/old/back/dmt.jpg"
+  
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/dmt.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/dmt.pdf"
+  },
+  {
+    "id": 10,
+    "name": "GHB",
+    "prettyName": "ghb",    
+    "description": "GHB Drug Info Card",
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/ghb.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/ghb.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/ghb.pdf"
+  },
+  {
+    "id": 11,
+    "name": "Heroin",
+    "prettyName": "heroin",
+    "description": " Heroin Drug Info Card",
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/heroin.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/heroin.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/heroin.pdf"
+  },
+  {
+    "id": 13,
+    "name": "Ketamine",
+    "prettyName": "ketamine",
+    "description": "Ketamine Drug Info Card",    
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/ketamine.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/ketamine.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/ketamine.pdf"
+  },
+  {
+    "id": 14,
+    "name": "Acid",
+    "prettyName": "acid",
+    "description": "Acid Drug Info Card",    
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/acid.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/acid.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/acid.pdf"
+  },
+  {
+    "id": 16,
+    "name": "Ecstasy",
+    "prettyName": "ecstasy",
+    "description": "Ecstasy Drug Info Card",    
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/ecstasy.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/ecstasy.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/ecstasy.pdf"
+  },
+  {
+    "id": 18,
+    "name": "Tobacco",
+    "prettyName": "tobacco",
+    "description": "Tobacco Drug Info Card",    
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/tobacco.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/tobacco.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/tobacco.pdf"
+  },
+  {
+    "id": 19,
+    "name": "Poppers",
+    "prettyName": "poppers",
+    "description": "Poppers Drug Info Card",    
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/poppers.jpg"
+  
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/poppers.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/poppers.pdf"
+  },
+  {
+    "id": 20,
+    "name": "Nitrous",
+    "prettyName": "nitrous",    
+    "description": "Nitrous Drug Info Card",    
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/nitrous.jpg",
+      "page2": "/images/page-display/drug-info-cards/old/back/nitrous.jpg"
+  
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/nitrous.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/nitrous.pdf"
+  },
+  {
+    "id": 21,
+    "name": "Mushrooms",
+    "prettyName": "mushrooms",    
+    "description": "Mushrooms Drug Info Card",    
+    "displayUrl": {
+      "page1": "/images/page-display/drug-info-cards/old/mushrooms.jpg"
+    },
+    "previewUrl": "/images/previews/drug-info-cards/old/mushrooms.jpg",
+    "downloadUrl": "/download/drug-info-cards/old/mushrooms.pdf"
+  }
+]

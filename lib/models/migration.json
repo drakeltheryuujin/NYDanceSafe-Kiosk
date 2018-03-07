@@ -1,68 +1,77 @@
 {
   "name": "Migration",
+  "description": "View and run pending migrations.",
   "plural": "Migrations",
   "base": "PersistedModel",
-  "description": "View and run pending migrations.",
-  "properties": {
-    "name": {
-      "type": "String",
-      "comments": "Name of the migration.",
-      "required": true
-    },
-    "runDtTm": {
-      "type": "Date",
-      "comments": "Date and time the migration ran.",
-      "required": true
-    }
-  },
   "indexes": {
     "name_index": {
       "name": 1
     }
   },
+  "properties": {
+    "name": {
+      "type": "String",
+      "required": true,
+      "comments": "Name of the migration."
+    },
+    "runDtTm": {
+      "type": "Date",
+      "required": true,
+      "comments": "Date and time the migration ran."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
   "methods": {
     "migrateTo": {
+      "accepts": [
+        {
+          "arg": "to",
+          "type": "String",
+          "description": "Name of the migration script to migrate to. If no name is provided all pending migrations will run."
+        }
+      ],
       "description": "Run all pending migrations",
       "http": {
         "path": "/migrate",
         "verb": "get"
-      },
-      "accepts": [{
-        "arg": "to",
-        "type": "String",
-        "description": "Name of the migration script to migrate to. If no name is provided all pending migrations will run."
-      }]
+      }
     },
     "migrateByName": {
+      "accepts": [
+        {
+          "arg": "name",
+          "type": "String",
+          "required": true,
+          "description": "Name of the migration script to run."
+        },
+        {
+          "arg": "record",
+          "type": "boolean",
+          "required": false
+        }
+      ],
       "description": "Run specific migration by name",
       "http": {
         "path": "/migrateByName",
         "verb": "get"
-      },
-      "accepts": [{
-        "arg": "name",
-        "type": "String",
-        "required": true,
-        "description": "Name of the migration script to run."
-      },
-      {
-        "arg" : "record",
-        "type" : "boolean",
-        "required" : false
-      }]
+      }
     },
     "rollbackTo": {
+      "accepts": [
+        {
+          "arg": "to",
+          "type": "String",
+          "required": true,
+          "description": "Name of the migration script to rollback to."
+        }
+      ],
       "description": "Rollback migrations",
       "http": {
         "path": "/rollback",
         "verb": "get"
-      },
-      "accepts": [{
-        "arg": "to",
-        "type": "String",
-        "required": true,
-        "description": "Name of the migration script to rollback to."
-      }]
+      }
     }
   }
 }

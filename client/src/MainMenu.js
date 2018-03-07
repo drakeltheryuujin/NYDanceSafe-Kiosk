@@ -35,6 +35,8 @@ class MainMenu extends Component {
         </li>
         <li>
           <Link to="/drug-info-cards-es">Drug Info Cards (ES)</Link>
+        </li>        <li>
+          <Link to="/drug-info-cards-old">Drug Info Cards (Originals)</Link>
         </li>
         <li>
           <a className="disabled">Test Results</a>

@@ -1,21 +1,18 @@
 import axios from 'axios';
+import apiUrl from '../utility/util.js';
 
-function sendTextMessage() {
-  const url = 'http://localhost:3001/api/SendText'
-  return dispatch => {
-        axios(url {
-          method: 'POST',
-          headers: {
-          Accept: 'application/JSON',
-          'Content-Type': 'application/JSON'
-        },
-        body: JSON.stringify({recipient: this.state.recipient})
-      })
-      .then(resp => resp.json())
-      .then(resp => {
-      console.log(resp)
-    })
-  }
+
+function sendTextMessage(state) {
+  const url = apiUrl + '/TextMessages'
+  debugger
+  axios.post(url, { description: state.description,
+    url: state.downloadUrl,
+    toNumber: state.mobileNumber,
+    optIn: state.optIn
+  })
+  .then((response) => {
+    console.log("saved");
+  })
 }
 
-export default getDrugInfoCards
+export default sendTextMessage

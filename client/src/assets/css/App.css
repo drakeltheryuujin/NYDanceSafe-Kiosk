@@ -317,6 +317,16 @@ hr {
   z-index: 3;
 }
 
+.banner-bg.full-height {
+  padding: 0;
+  overflow: visible;
+}
+
+.banner-bg.full-height img {
+  width: 100vw;
+  height: auto;
+}
+
 .welcome-text {
   position: relative;
   z-index: 4;

@@ -12,8 +12,10 @@ var lbTables = [
   'Reagent',
   'Substance',
   'DrugInfoCard',
+  'DrugInfoCardOriginal',
   'Migration',
-  'MigrationMap'
+  'MigrationMap',
+  'TextMessage',
 ]
 
 ds.automigrate(lbTables, function(er) {

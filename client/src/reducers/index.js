@@ -4,8 +4,8 @@ import textModalReducer from './textModalReducer';
 
 
 const rootReducer = combineReducers({
-  drugInfoCards: drugInfoCardReducer
-  drugInfoCards: textModalReducer
+  drugInfoCards: drugInfoCardReducer,
+  textModal: textModalReducer
 })
 
 

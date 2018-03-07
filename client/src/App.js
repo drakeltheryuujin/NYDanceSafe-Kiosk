@@ -5,7 +5,7 @@ import './assets/css/font-awesome.css';
 import './assets/css/App.css';
 import Home from './Home';
 import DrugInfoCards from './containers/drugInfoCardContainer';
-import DrugInfoCards from './containers/textModalContainer';
+import DrugInfoCardsOld from './containers/drugInfoCardOriginalsContainer';
 
 const HydrationNutrition = ({ match }) => (
   <div>
@@ -53,6 +53,7 @@ const App = () => (
     <Route path="/consent" component={Consent}/>
     <Route path="/mapping-the-universe-of-drugs" component={MappingTheUniverseOfDrugs}/>
     <Route path="/drug-info-cards-es" component={DrugInfoCardsEs}/>
+    <Route path="/drug-info-cards-old" component={DrugInfoCardsOld}/>
   </div>
 )
 export default App

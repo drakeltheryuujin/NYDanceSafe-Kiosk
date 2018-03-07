@@ -3,252 +3,273 @@
     "id": 1,
     "name": "2c(x)",
     "prettyName": "2cs",
+    "description": "2c(x) Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/2cs.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/2cs.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/2cs.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/2cs.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1zJHuyXGLJMPwlOMiaDI9gx5gpQv70xIC"
   },
   {
     "id": 2,
     "name": "Alcohol",
     "prettyName": "alcohol",
+    "description": "Alcohol Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/alcohol.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/alcohol.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/alcohol.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/alcohol.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=11RldmlU4XvSoRiAYxGSN_vXBn6XxSg07"
   },
   {
     "id": 3,
     "name": "Amphetamines",
     "prettyName": "amphetamines",
+    "description": "Amphetamines Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/amphetamines.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/amphetamines.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/amphetamines.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/amphetamines.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1KX_kME_aMtpyyJEpORfbP2d33J8a3QHB"
   },
   {
     "id": 4,
     "name": "Cannabis",
     "prettyName": "cannabis",    
+    "description": "Cannabis Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/cannabis.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/cannabis.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/cannabis.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/cannabis.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1zEZGEtZyM9ISJDBIg8CqAl37UY-Egn5h"
   },
   {
     "id": 5,
     "name": "Cathinones",
     "prettyName": "cathinones",
+    "description": "Cathinones Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/cathinones.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/cathinones.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/cathinones.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/cathinones.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1YQET-5-67EIaUqjREXK0fkCGrRC1uwmB"
   },
   {
     "id": 6,
     "name": "Cocaine",
     "prettyName": "cocaine",
+    "description": "Cocaine Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/cocaine.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/cocaine.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/cocaine.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/cocaine.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1dGV7xHjFmV8pT_MriDbsjS8NyY0PZBD4"
   },
   {
     "id": 7,
     "name": "DMT",
     "prettyName": "dmt",
+    "description": "DMT Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/dmt.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/dmt.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/dmt.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/dmt.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1o1oGCUuiX20sCz1ZpeQK15JWbCOkdik8"
   },
   {
     "id": 8,
     "name": "DO(x)",
     "prettyName": "dox",
+    "description": "DO(x) Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/dox.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/dox.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/dox.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/dox.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=10OCB1ssl0aREK4J4KLPlfgHq7q453KGz"
   },
   {
     "id": 9,
     "name": "DXM",
     "prettyName": "dxm",
+    "description": "DXM Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/dxm.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/dxm.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/dxm.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/dxm.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1i-TPIyGAoIflfdmlOwgoRpTiuyuIsv7j"
   },
   {
     "id": 10,
     "name": "GHB",
     "prettyName": "ghb",    
+    "description": "GHB Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/ghb.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/ghb.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/ghb.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/ghb.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1QAexnwGzpUuPwemkcbpoNfunfJITosYW"
   },
   {
     "id": 11,
     "name": "Heroin",
     "prettyName": "heroin",
+    "description": " Heroin Drug Info Card",
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/heroin.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/heroin.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/heroin.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/heroin.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1tHqT0JzQL0g47cY2lJf3WZPVEBMsnts0"
   },
   {
     "id": 12,
     "name": "JWH",
     "prettyName": "jwh",
+    "description": "JWH Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/jwh.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/jwh.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/jwh.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/jwh.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1YnGWY_sTw7udzw99cryioy6c_lVT63cn"
   },
   {
     "id": 13,
     "name": "Ketamine",
     "prettyName": "ketamine",
+    "description": "Ketamine Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/ketamine.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/ketamine.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/ketamine.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/ketamine.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1E7HOyVHkYFwC-uHLw7UYs_LZYtgblAFF"
   },
   {
     "id": 14,
     "name": "LSD",
     "prettyName": "lsd",
+    "description": "LSD Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/lsd.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/lsd.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/lsd.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/lsd.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1_2j7XZYwKwz1AmFZqYRIluqkG1hAXFui"
   },
   {
     "id": 15,
     "name": "MDA",
     "prettyName": "mda",
+    "description": "MDA Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/mda.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/mda.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/mda.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/mda.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1WK_tnnS73XBsCBeISzwiqUxgeZSB3YoW"
   },
   {
     "id": 16,
     "name": "MDMA",
     "prettyName": "mdma",
+    "description": "MDMA Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/mdma.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/mdma.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/mdma.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/mdma.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1I-YWtJ_gEYKP7Su9-QzOG5BM2glcLXwE"
   },
   {
     "id": 17,
     "name": "MXE",
     "prettyName": "mxe",
+    "description": "MXE Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/mxe.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/mxe.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/mxe.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/mxe.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1CoHVk-cIJ3NrIip-bS_kLrNQgsYU5yCw"
   },
   {
     "id": 18,
     "name": "Nicotine",
     "prettyName": "nicotine",
+    "description": "Nicotine Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/nicotine.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/nicotine.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/nicotine.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/nicotine.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=19wBm33b_5d9k7rF87SyTO_FfHd_J3dpA"
   },
   {
     "id": 19,
     "name": "Nitrites",
     "prettyName": "nitrites",
+    "description": "Nitrites Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/nitrites.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/nitrites.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/nitrites.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/nitrites.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1rcg5RTeAI6fygYBLQApWo4S92GrWuhVG"
   },
   {
     "id": 20,
     "name": "Nitrous",
     "prettyName": "nitrous",    
+    "description": "Nitrous Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/nitrous.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/nitrous.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/nitrous.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/nitrous.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1rOslMw0yVZo-P2rHDVks6JvlQeOl7xAj"
   },
   {
     "id": 21,
     "name": "Psilocybin",
     "prettyName": "psilocybin",    
+    "description": "Psilocybin Drug Info Card",    
     "displayUrl": {
       "page1": "/images/page-display/drug-info-cards/en/front/psilocybin.jpg",
       "page2": "/images/page-display/drug-info-cards/en/back/psilocybin.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/en/psilocybin.jpg",
-    "downloadUrl": "/download/drug-info-cards/en/psilocybin.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1_E9MxeyMykVCHmuVjGhJIJMTXtdCJdxo"
   }
 ]

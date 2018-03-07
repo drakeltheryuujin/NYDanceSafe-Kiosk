@@ -1,29 +1,8 @@
 {
   "name": "MigrationMap",
+  "description": "Migration Mappings.",
   "plural": "MigrationMaps",
   "base": "PersistedModel",
-  "description": "Migration Mappings.",
-  "properties": {
-    "type": {
-      "type": "String",
-      "comments": "Mapping type.",
-      "required": true
-    },
-    "from": {
-      "type": "String",
-      "comments": "Source Id.",
-      "required": true
-    },
-    "to": {
-      "type": "String",
-      "comments": "Target Id.",
-      "required": true
-    },
-    "data": {
-      "type": "Object",
-      "comments": "Additional data."
-    }
-  },
   "indexes": {
     "type_from_index": {
       "keys": {
@@ -31,5 +10,30 @@
         "from": 1
       }
     }
-  }
+  },
+  "properties": {
+    "type": {
+      "type": "String",
+      "required": true,
+      "comments": "Mapping type."
+    },
+    "from": {
+      "type": "String",
+      "required": true,
+      "comments": "Source Id."
+    },
+    "to": {
+      "type": "String",
+      "required": true,
+      "comments": "Target Id."
+    },
+    "data": {
+      "type": "Object",
+      "comments": "Additional data."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
 }

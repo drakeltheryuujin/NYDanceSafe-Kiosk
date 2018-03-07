@@ -5,19 +5,19 @@ import Menu from './DrugInfoCardMenu';
 import TextDataButton from './TextDataButton';
 import ShareDataButton from './ShareDataButton';
 import SocialIcons from './SocialIcons';
-import ShareModal from './ShareModal';
-import TextModal from './TextModal';
 import './assets/css/Sidebar.css';
 import './assets/css/Widgets.css';
+import TextModal from './containers/textModalContainer';
 
 class Home extends Component {
   constructor( props ) {
 		super( props );
     this.state = {
-      currentDrug: "",
+      currentInfo: "",
+      description: "",
       background: {
-        page1: "/images/page-display/drug-info-cards/en/front/2cs.jpg",
-        page2: "/images/page-display/drug-info-cards/en/back/2cs.jpg"
+        page1: "/images/page-display/default.jpg",
+        page2: "/images/page-display/default.jpg"
         },
       previewUrl: "",
       downloadUrl: "",
@@ -32,7 +32,8 @@ class Home extends Component {
   updateDrug(data){
     this.setState({
       background: Object.assign({}, this.state.background, data.displayUrl),
-      currentDrug: data.name,
+      currentInfo: data.name,
+      description: data.description,
       previewUrl: data.previewUrl,
       downloadUrl: data.downloadUrl
     },() => console.log(this.state))
@@ -107,14 +108,13 @@ class Home extends Component {
         <div className="share-info">
           <ul>
             <TextDataButton url={this.props.match.path} action={this.openTextModal}/>
-            {/*<TextDataButton url={this.props.match.path} action={this.openTextModal}/>*/}
           </ul>
         </div>
         <div className="banner-bg" id="front" style={{backgroundImage: `url(${this.state.background.page1})`}}></div>
         <div className="banner-bg" id="back" style={{backgroundImage: `url(${this.state.background.page2})`}}></div>
 
-        <TextModal currentData={this.state}/>
-      {/*<ShareModal currentData={this.state}/>*/}
+        <TextModal currentData={this.state} modal={this.closeModal}/>
+        {/*<ShareModal currentData={this.state}/>*/}
       </div>
     )
   }

@@ -4,7 +4,10 @@ import TextModalComponent from '../TextModal'
 
 function mapStateToProps(state) {
   return {
-    drugInfoCards: state.drugInfoCards
+    description: state.description,
+    url: state.downloadUrl,
+    toNumber: state.mobileNumber,
+    optIn: state.optIn
   }
 }
 
