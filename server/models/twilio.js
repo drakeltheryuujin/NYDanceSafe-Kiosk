@@ -1,9 +1,9 @@
 'use strict';
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').load();
-}
-var accountSid = 'TWILIO_SID'; 
-var authToken = 'TWILIO_TOKEN';  
+
+require('dotenv').load();
+
+var accountSid = process.env.TWILIO_SID;
+var authToken = process.env.TWILIO_TOKEN;
 
 var twilio = require('twilio');
 var client = new twilio(accountSid, authToken);
