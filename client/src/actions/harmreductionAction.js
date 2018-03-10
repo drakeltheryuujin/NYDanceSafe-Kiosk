@@ -1,7 +1,7 @@
 import axios from 'axios';
 import apiUrl from '../utility/util.js';
 
-function getDrugInfoCardOriginalsSuccess(response) {
+function getDrugInfoCardsSuccess(response) {
   return {
     type:'GET_DRUG_INFO_CARDS',
     payload: response
@@ -14,7 +14,7 @@ function getDrugInfoCardOriginals() {
     axios.get(url)
       .then((response) => {
         console.log(response.data);
-        dispatch(getDrugInfoCardOriginalsSuccess(response.data))
+        dispatch(getDrugInfoCardsSuccess(response.data))
       })
   }
 }

@@ -64,6 +64,7 @@ class Home extends Component {
       let resort = 0;
       if (drugA > drugB) {
         resort = 1;
+      } else if (drugA < drugB) {
         resort = -1;
       }
       return resort;

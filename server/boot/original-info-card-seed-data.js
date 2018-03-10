@@ -26,5 +26,5 @@ module.exports = function(app) {
       });
     })
   })
-  console.log("Drug Info Card Data succesfully migrated")
+  console.log("Original Drug Info Card Data succesfully migrated")
 };

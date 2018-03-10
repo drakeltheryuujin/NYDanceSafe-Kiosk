@@ -1,17 +1,15 @@
 [
   {
-    "id": 1,
-    "name": "2cb",
+    "name": "2c-b",
     "prettyName": "2cb",
     "description": "2cb Drug Info Card",
     "displayUrl": {
-      "page1": "/images/page-display/drug-info-cards/old/2cs.jpg"
+      "page1": "/images/page-display/drug-info-cards/old/2cb.jpg"
     },
-    "previewUrl": "/images/previews/drug-info-cards/old/2cs.jpg",
+    "previewUrl": "/images/previews/drug-info-cards/old/2cb.jpg",
     "downloadUrl": "https://drive.google.com/open?id=1HOlXtUQ0ZNllmS5adxwGZmRgfYV53peT"
   },
   {
-    "id": 2,
     "name": "Alcohol",
     "prettyName": "alcohol",
     "description": "Alcohol Drug Info Card",
@@ -22,7 +20,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1t6UZa5qemBklL1OfK7HFwcNKV-Q157dL"
   },
   {
-    "id": 3,
     "name": "Speed",
     "prettyName": "Speed",
     "description": "Amphetamines Drug Info Card",
@@ -33,7 +30,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1UwVchlbzpnevXoEr_URppeRGkxC3k7zl"
   },
   {
-    "id": 4,
     "name": "Marijuana",
     "prettyName": "marijuana",    
     "description": "Marijuana Drug Info Card",
@@ -44,7 +40,6 @@
     "downloadUrl": "https://drive.google.com/open?id=17pKRBtqAAc6iZ1F6bW235oEQzZExZ_rt"
   },
   {
-    "id": 6,
     "name": "Cocaine",
     "prettyName": "cocaine",
     "description": "Cocaine Drug Info Card",
@@ -57,7 +52,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1-Ow1cQtsVdLxxkoeR74jxgRaUiyX_yvn"
   },
   {
-    "id": 7,
     "name": "DMT",
     "prettyName": "dmt",
     "description": "DMT Drug Info Card",
@@ -70,7 +64,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1f9VHWcvkxA_8jN44ZHTqFDKmRzcA20Em"
   },
   {
-    "id": 10,
     "name": "GHB",
     "prettyName": "ghb",    
     "description": "GHB Drug Info Card",
@@ -81,7 +74,6 @@
     "downloadUrl": "https://drive.google.com/open?id=129TR7RPfCRwaxciloyhml45zlVP2VrNE"
   },
   {
-    "id": 11,
     "name": "Heroin",
     "prettyName": "heroin",
     "description": " Heroin Drug Info Card",
@@ -92,7 +84,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1Ar8GFhmqNegFAR8zx6iqYbnHuU_5S1ib"
   },
   {
-    "id": 13,
     "name": "Ketamine",
     "prettyName": "ketamine",
     "description": "Ketamine Drug Info Card",    
@@ -103,7 +94,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1ob5gjjqyRjnCAThIHoR-iFhOiFQf3qKU"
   },
   {
-    "id": 14,
     "name": "Acid",
     "prettyName": "acid",
     "description": "Acid Drug Info Card",    
@@ -114,7 +104,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1DRgjBnTD9agG-SLV8Iao9e9H3rDjFmqU"
   },
   {
-    "id": 16,
     "name": "Ecstasy",
     "prettyName": "ecstasy",
     "description": "Ecstasy Drug Info Card",    
@@ -125,7 +114,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1aSB9n9yoyDXcJqNyReIxospvdLWqyBp6"
   },
   {
-    "id": 18,
     "name": "Tobacco",
     "prettyName": "tobacco",
     "description": "Tobacco Drug Info Card",    
@@ -136,7 +124,6 @@
     "downloadUrl": "https://drive.google.com/open?id=1PPgbEBK3fOyXmKkXZbuPW2otOwWp0LiN"
   },
   {
-    "id": 19,
     "name": "Poppers",
     "prettyName": "poppers",
     "description": "Poppers Drug Info Card",    
@@ -148,20 +135,17 @@
     "downloadUrl": "https://drive.google.com/open?id=1Y4Y2zHyT-P7zSuD4ddZACwIdN9nNoqIx"
   },
   {
-    "id": 20,
     "name": "Nitrous",
     "prettyName": "nitrous",    
     "description": "Nitrous Drug Info Card",    
     "displayUrl": {
-      "page1": "/images/page-display/drug-info-cards/old/nitrous.jpg",
-      "page2": "/images/page-display/drug-info-cards/old/back/nitrous.jpg"
+      "page1": "/images/page-display/drug-info-cards/old/nitrous.jpg"
   
     },
     "previewUrl": "/images/previews/drug-info-cards/old/nitrous.jpg",
     "downloadUrl": "https://drive.google.com/open?id=1ER_zcqU5pYJoYPaOuobEoSykmBPl9zLM"
   },
   {
-    "id": 21,
     "name": "Mushrooms",
     "prettyName": "mushrooms",    
     "description": "Mushrooms Drug Info Card",    

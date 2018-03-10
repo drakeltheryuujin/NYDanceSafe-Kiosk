@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import drugInfoCardOriginalAction from '../actions/drugInfoCardOriginalsAction'
-import DrugInfoCardComponent from '../DrugInfoCardOriginals'
+import DrugInfoCardOriginalComponent from '../DrugInfoCardOriginals'
 
 function mapStateToProps(state) {
   return {
@@ -8,6 +8,6 @@ function mapStateToProps(state) {
   }
 }
 
-const DrugInfoCardOriginalsContainer = connect(mapStateToProps, {getDrugInfoCardOriginals: drugInfoCardOriginalAction})(DrugInfoCardComponent)
+const DrugInfoCardOriginalsContainer = connect(mapStateToProps, {getDrugInfoCardOriginals: drugInfoCardOriginalAction})(DrugInfoCardOriginalComponent)
 
 export default DrugInfoCardOriginalsContainer
