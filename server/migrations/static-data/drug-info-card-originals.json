@@ -8,7 +8,7 @@
       "page1": "/images/page-display/drug-info-cards/old/2cs.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/2cs.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/2cs.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1HOlXtUQ0ZNllmS5adxwGZmRgfYV53peT"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
       "page1": "/images/page-display/drug-info-cards/old/alcohol.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/alcohol.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/alcohol.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1t6UZa5qemBklL1OfK7HFwcNKV-Q157dL"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
       "page1": "/images/page-display/drug-info-cards/old/speed.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/speed.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/speed.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1UwVchlbzpnevXoEr_URppeRGkxC3k7zl"
   },
   {
     "id": 4,
@@ -38,10 +38,10 @@
     "prettyName": "marijuana",    
     "description": "Marijuana Drug Info Card",
     "displayUrl": {
-      "page1": "/images/page-display/drug-info-cards/old/cannabis.jpg"
+      "page1": "/images/page-display/drug-info-cards/old/marijuana.jpg"
     },
-    "previewUrl": "/images/previews/drug-info-cards/old/cannabis.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/cannabis.pdf"
+    "previewUrl": "/images/previews/drug-info-cards/old/marijuana.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=17pKRBtqAAc6iZ1F6bW235oEQzZExZ_rt"
   },
   {
     "id": 6,
@@ -54,7 +54,7 @@
   
     },
     "previewUrl": "/images/previews/drug-info-cards/old/cocaine.jpg",
-    "downloadUrl": "https://drive.google.com/open?id=1dGV7xHjFmV8pT_MriDbsjS8NyY0PZBD4"
+    "downloadUrl": "https://drive.google.com/open?id=1-Ow1cQtsVdLxxkoeR74jxgRaUiyX_yvn"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
   
     },
     "previewUrl": "/images/previews/drug-info-cards/old/dmt.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/dmt.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1f9VHWcvkxA_8jN44ZHTqFDKmRzcA20Em"
   },
   {
     "id": 10,
@@ -78,7 +78,7 @@
       "page1": "/images/page-display/drug-info-cards/old/ghb.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/ghb.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/ghb.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=129TR7RPfCRwaxciloyhml45zlVP2VrNE"
   },
   {
     "id": 11,
@@ -89,7 +89,7 @@
       "page1": "/images/page-display/drug-info-cards/old/heroin.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/heroin.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/heroin.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1Ar8GFhmqNegFAR8zx6iqYbnHuU_5S1ib"
   },
   {
     "id": 13,
@@ -100,7 +100,7 @@
       "page1": "/images/page-display/drug-info-cards/old/ketamine.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/ketamine.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/ketamine.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1ob5gjjqyRjnCAThIHoR-iFhOiFQf3qKU"
   },
   {
     "id": 14,
@@ -111,7 +111,7 @@
       "page1": "/images/page-display/drug-info-cards/old/acid.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/acid.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/acid.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1DRgjBnTD9agG-SLV8Iao9e9H3rDjFmqU"
   },
   {
     "id": 16,
@@ -122,7 +122,7 @@
       "page1": "/images/page-display/drug-info-cards/old/ecstasy.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/ecstasy.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/ecstasy.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1aSB9n9yoyDXcJqNyReIxospvdLWqyBp6"
   },
   {
     "id": 18,
@@ -133,7 +133,7 @@
       "page1": "/images/page-display/drug-info-cards/old/tobacco.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/tobacco.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/tobacco.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1PPgbEBK3fOyXmKkXZbuPW2otOwWp0LiN"
   },
   {
     "id": 19,
@@ -145,7 +145,7 @@
   
     },
     "previewUrl": "/images/previews/drug-info-cards/old/poppers.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/poppers.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1Y4Y2zHyT-P7zSuD4ddZACwIdN9nNoqIx"
   },
   {
     "id": 20,
@@ -158,7 +158,7 @@
   
     },
     "previewUrl": "/images/previews/drug-info-cards/old/nitrous.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/nitrous.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1ER_zcqU5pYJoYPaOuobEoSykmBPl9zLM"
   },
   {
     "id": 21,
@@ -169,6 +169,6 @@
       "page1": "/images/page-display/drug-info-cards/old/mushrooms.jpg"
     },
     "previewUrl": "/images/previews/drug-info-cards/old/mushrooms.jpg",
-    "downloadUrl": "/download/drug-info-cards/old/mushrooms.pdf"
+    "downloadUrl": "https://drive.google.com/open?id=1-GQhwsITlFGGVWtfRAo1va-kxMVI4feS"
   }
 ]

@@ -13,6 +13,7 @@ var lbTables = [
   'Substance',
   'DrugInfoCard',
   'DrugInfoCardOriginal',
+  'Harmreduction',
   'Migration',
   'MigrationMap',
   'TextMessage',

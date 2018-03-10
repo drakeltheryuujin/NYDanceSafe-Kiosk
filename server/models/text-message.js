@@ -1,5 +1,4 @@
 'use strict';
-var TinyURL = require('tinyurl');
 
 module.exports = function(TextMessage) {
 
@@ -33,14 +32,12 @@ module.exports = function(TextMessage) {
 
   TextMessage.on('set', function(ctx) {
     console.log(ctx)
-    TinyURL.shorten( ctx.url, function( shortUrl ) {
-      var newMessage =
-      {
-        "body": `Thanks for using a NY DanceSafe kiosk! Download the ${ctx.description} here: ${shortUrl}`,
-        "number": ctx.toNumber
-      }
-      console.log(newMessage)
-      TextMessage.app.models.Twilio.sendMessage(newMessage)
-    });
+    var newMessage =
+    {
+      "body": `Thanks for using a NY DanceSafe kiosk! Download the ${ctx.description} here: ${ctx.url}`,
+      "number": ctx.toNumber
+    }
+    console.log(newMessage)
+    TextMessage.app.models.Twilio.sendMessage(newMessage)
   });
 };

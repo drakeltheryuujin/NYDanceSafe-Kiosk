@@ -64,6 +64,10 @@
     "dataSource": "db",
     "public": true
   },
+  "Harmreduction": {
+    "dataSource": "db",
+    "public": true
+  },
   "Twilio": {
     "dataSource": "twilio",
     "public": true

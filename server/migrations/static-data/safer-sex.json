@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Blow Job Tips",
+    "prettyName": "blow-job-tips",
+    "description": "Blow Job Tips Brochure",
+    "displayUrl": {
+      "page1": "/images/page-display/safer-sex/blog-job-tips-1.jpg",
+      "page2": "/images/page-display/safer-sex/blog-job-tips-2.jpg"
+    },
+    "previewUrl": "/images/previews/safer-sex/blog-job-tips.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1CUHbYeZb7YfoAibIR4sfKmGCcUcG7aYJ"
+  },
+  {
+    "name": "Hepatitis: Know the ABCs",
+    "prettyName": "hepatitis-a-b-c",
+    "description": "Hepatitis: Know the ABCs Graphic",
+    "displayUrl": {
+      "page1": "/images/page-display/safer-sex/hepatitis-a-b-c.jpg"
+    },
+    "previewUrl": "/images/previews/safer-sex/hepatitis-a-b-c.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1F2GQWf-6w5vjZsYGZBlUEm79Caa1GsFQ"
+  },
+  {
+    "name": "Oral Sex",
+    "prettyName": "oral-sex",
+    "description": "Oral Sex Pamphlet",
+    "displayUrl": {
+      "page1": "/images/page-display/safer-sex/oral-sex-1.jpg",
+      "page2": "/images/page-display/safer-sex/oral-sex-2.jpg"
+    },
+    "previewUrl": "/images/previews/safer-sex/oral-sex.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1F2GQWf-6w5vjZsYGZBlUEm79Caa1GsFQ"
+  },
+  {
+    "name": "Safer Rimming Tips",
+    "prettyName": "safer-rimming-tips",
+    "description": "Safer Rimming Tips Pamphlet",
+    "displayUrl": {
+      "page1": "/images/page-display/safer-sex/safer-rimming-tips-1.jpg",
+      "page2": "/images/page-display/safer-sex/safer-rimming-tips-2.jpg"
+    },
+    "previewUrl": "/images/previews/safer-sex/safer-rimming-tips.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1TfM71eZbrsE1g5m43ibQPv0o3mTjikUx"
+  },
+  {
+    "name": "Sex Toys",
+    "prettyName": "sex-toys",
+    "description": "Sex Toys Pamphlet",
+    "displayUrl": {
+      "page1": "/images/page-display/safer-sex/sex-toys_Page_1.jpg",
+      "page2": "/images/page-display/safer-sex/sex-toys_Page_2.jpg"
+    },
+    "previewUrl": "/images/previews/safer-sex/sex-toys.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1TfM71eZbrsE1g5m43ibQPv0o3mTjikUx"
+  },
+]
+

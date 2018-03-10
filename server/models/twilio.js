@@ -44,7 +44,7 @@ module.exports = function(Twilio) {
 
     client.messages.create({
       to: '+1' + message.number,  // Text this number
-      from: 'SENDER', // From a valid Twilio number
+      from: process.env.SENDER, // From a valid Twilio number
       body: message.body
     })
     .then((message) => console.log(message.sid));

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Hearing Protection",
+    "prettyName": "hearing-protection",
+    "description": "Hearing Protection Card",
+    "displayUrl": {
+      "page1": "/images/page-display/hearing-protection/hearing-protection.jpg"
+    },
+    "previewUrl": "/images/previews/hearing-protection/hearing-protection.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1Zu4oQc21KPkH6k2XAMt2bRI0OxktWr9y"
+  }
+]
+
