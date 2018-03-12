@@ -1,22 +1,22 @@
 import axios from 'axios';
 import apiUrl from '../utility/util.js';
 
-function getDrugInfoCardsSuccess(response) {
+function getHarmreductionSuccess(response) {
   return {
-    type:'GET_DRUG_INFO_CARDS',
+    type:'GET_INFO',
     payload: response
   }
 }
 
-function getDrugInfoCardOriginals() {
-  const url = apiUrl + '/DrugInfoCardsOriginals'
+function getHarmreductions() {
+  const url = apiUrl + '/Harmreductions'
   return dispatch => {
     axios.get(url)
       .then((response) => {
         console.log(response.data);
-        dispatch(getDrugInfoCardsSuccess(response.data))
+        dispatch(getHarmreductionSuccess(response.data))
       })
   }
 }
 
-export default getDrugInfoCardOriginals
+export default getHarmreductions

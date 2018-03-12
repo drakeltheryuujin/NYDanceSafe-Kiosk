@@ -166,6 +166,16 @@
     },
     "previewUrl": "/images/previews/harmreduction/uppers-overdose.jpg",
     "downloadUrl": "https://drive.google.com/open?id=1pdsMNl9Y1LCQpFA2WoO18f3pQ4G0ZtC6"
+  },
+  {
+    "name": "Drug Harms in the UK",
+    "prettyName": "drug-harms-uk",
+    "description": "Drug Harms in the UK Study",
+    "displayUrl": {
+      "page1": "/images/previews/harmreduction/drug-harms-uk.jpg"
+    },
+    "previewUrl": "/images/previews/harmreduction/drug-harms-uk.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1glzs6IFna6M0kKEsyFgXGOhkULrx3c2M"
   }
 ]
 

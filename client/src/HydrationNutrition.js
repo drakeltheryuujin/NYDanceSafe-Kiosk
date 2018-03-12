@@ -9,7 +9,7 @@ import './assets/css/Sidebar.css';
 import './assets/css/Widgets.css';
 import TextModal from './containers/textModalContainer';
 
-class Home extends Component {
+class HydrationNutrition extends Component {
   constructor( props ) {
 		super( props );
     this.state = {
@@ -17,7 +17,8 @@ class Home extends Component {
       description: "",
       background: {
         page1: "/images/page-display/default.jpg",
-        page2: "/images/page-display/default.jpg"
+        page2: "/images/page-display/default.jpg",
+        page3: "/images/page-display/default.jpg"
         },
       previewUrl: "",
       downloadUrl: "",
@@ -81,8 +82,9 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.props.getDrugInfoCards()
+    this.props.getHydrationNutritions()
   }
+
   render() {
 	  return(
       <div>
@@ -110,8 +112,15 @@ class Home extends Component {
             <TextDataButton url={this.props.match.path} action={this.openTextModal}/>
           </ul>
         </div>
-        <div className="banner-bg" id="front" style={{backgroundImage: `url(${this.state.background.page1})`}}></div>
-        <div className="banner-bg" id="back" style={{backgroundImage: `url(${this.state.background.page2})`}}></div>
+        <div className="banner-bg full-height" id="front">
+          <img src={this.state.background.page1}/>
+          if (this.state.background.page2){
+            <img src={this.state.background.page2}/>
+          }
+          if (this.state.background.page3){
+          <img src={this.state.background.page3}/>
+          }
+        </div>
 
         <TextModal currentData={this.state} modal={this.closeModal}/>
         {/*<ShareModal currentData={this.state}/>*/}
@@ -120,4 +129,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default HydrationNutrition

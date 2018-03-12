@@ -13,6 +13,9 @@ class MainMenu extends Component {
           <Link to="/drug-info-cards">Drug Info Cards</Link>
         </li>
         <li>
+          <Link to="/harmreduction">Harm Reduction</Link>
+        </li>
+        <li>
           <a className="disabled">Buy Kits</a>
         </li>
         <li>
@@ -35,7 +38,8 @@ class MainMenu extends Component {
         </li>
         <li>
           <Link to="/drug-info-cards-es">Drug Info Cards (ES)</Link>
-        </li>        <li>
+        </li>        
+        <li>
           <Link to="/drug-info-cards-old">Drug Info Cards (Originals)</Link>
         </li>
         <li>

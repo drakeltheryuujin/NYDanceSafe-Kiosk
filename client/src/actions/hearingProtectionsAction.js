@@ -1,22 +1,22 @@
 import axios from 'axios';
 import apiUrl from '../utility/util.js';
 
-function getDrugInfoCardsSuccess(response) {
+function getHearingProtectionsSuccess(response) {
   return {
     type:'GET_INFO',
     payload: response
   }
 }
 
-function getDrugInfoCards() {
-  const url = apiUrl + '/DrugInfoCards'
+function getHearingProtections() {
+  const url = apiUrl + '/HearingProtections'
   return dispatch => {
     axios.get(url)
       .then((response) => {
         console.log(response.data);
-        dispatch(getDrugInfoCardsSuccess(response.data))
+        dispatch(getHearingProtectionsSuccess(response.data))
       })
   }
 }
 
-export default getDrugInfoCards
+export default getHearingProtections

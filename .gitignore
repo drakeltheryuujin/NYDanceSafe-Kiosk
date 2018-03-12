@@ -21,3 +21,4 @@ npm-debug.log
 .build/dist
 .env
 .package-lock.json
+client/public/download/*

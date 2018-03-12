@@ -9,7 +9,7 @@ import './assets/css/Sidebar.css';
 import './assets/css/Widgets.css';
 import TextModal from './containers/textModalContainer';
 
-class Home extends Component {
+class DrugInfoCardOriginal extends Component {
   constructor( props ) {
 		super( props );
     this.state = {
@@ -76,7 +76,7 @@ class Home extends Component {
       propsCopy.drugInfoCards = propsCopy.drugInfoCards.sort(this.resortDrugsByName);
       return <Menu childProps={propsCopy} state={this.state.background} updateDrug={this.updateDrug} />;
     } else {
-      return '<ul className="navigation"><li>No Information to Load</li></ul>';
+      return <ul className="navigation"><li><a>No Information Loaded</a></li></ul>
     }
   }
 
@@ -121,4 +121,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default DrugInfoCardOriginal

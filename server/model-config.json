@@ -68,6 +68,14 @@
     "dataSource": "db",
     "public": true
   },
+  "HearingProtection": {
+    "dataSource": "db",
+    "public": true
+  },
+  "HydrationNutrition": {
+    "dataSource": "db",
+    "public": true
+  },
   "Twilio": {
     "dataSource": "twilio",
     "public": true

@@ -14,6 +14,8 @@ var lbTables = [
   'DrugInfoCard',
   'DrugInfoCardOriginal',
   'Harmreduction',
+  'HearingProtection',
+  'HydrationNutrition',
   'Migration',
   'MigrationMap',
   'TextMessage',

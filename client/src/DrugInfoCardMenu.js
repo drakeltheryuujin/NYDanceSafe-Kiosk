@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './assets/css/MainMenu.css';
 
-
-
 class DrugInfoCardMenu extends Component {
   constructor(props){
     super(props);
