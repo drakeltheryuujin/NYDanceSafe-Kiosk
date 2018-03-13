@@ -6,12 +6,6 @@
     "connector": "postgresql",
     "password": "b5ce0eaec0fc3a8fdf1deb49da8baf2eec72b37eca81c33d4269c13fc789ed16"
   },
-  "local-storage": {
-    "name": "local-storage",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./common/local-storage"
-  },
   "twilio": {
     "name": "twilio",
     "connector": "loopback-connector-twilio2"

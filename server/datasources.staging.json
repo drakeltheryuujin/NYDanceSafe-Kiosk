@@ -1,19 +1,15 @@
 {
   "db": {
     "port": 5432,
-    "database": "dd1jrpjv95l7ud",
-    "user": "dkdqasjwjhuhog",
-    "connector": "postgresql",
-    "password": "b5ce0eaec0fc3a8fdf1deb49da8baf2eec72b37eca81c33d4269c13fc789ed16"
-  },
-  "local-storage": {
-    "name": "local-storage",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./common/local-storage"
+    "database": "dskiosk",
+    "name": "db",
+    "connector": "postgresql"
   },
   "twilio": {
     "name": "twilio",
-    "connector": "loopback-connector-twilio2"
+    "connector": "loopback-connector-twilio2",
+    "accountSid": "AC1a4a8c925ae81a6ece32b5efc4c4dcb5",
+    "authToken": "22616b58b3b73984a36809a9bc666324",
+    "apiToken": "../.env"
   }
 }

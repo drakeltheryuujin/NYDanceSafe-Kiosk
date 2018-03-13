@@ -33,7 +33,7 @@
     "public": false
   },
   "Molecule": {
-    "dataSource": "local-storage",
+    "dataSource": "db",
     "public": true
   },
   "Category": {
