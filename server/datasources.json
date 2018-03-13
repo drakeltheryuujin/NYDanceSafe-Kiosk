@@ -13,9 +13,6 @@
   },
   "twilio": {
     "name": "twilio",
-    "connector": "loopback-connector-twilio2",
-    "accountSid": "AC1a4a8c925ae81a6ece32b5efc4c4dcb5",
-    "authToken": "22616b58b3b73984a36809a9bc666324",
-    "apiToken": "YOUR_API_TOKEN"
+    "connector": "loopback-connector-twilio2"
   }
 }
