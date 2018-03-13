@@ -5,14 +5,10 @@
     "name": "db",
     "connector": "postgresql"
   },
-  "local-storage": {
-    "name": "local-storage",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./common/local-storage"
-  },
   "twilio": {
     "name": "twilio",
-    "connector": "loopback-connector-twilio2"
+    "connector": "loopback-connector-twilio2",
+    "accountSid": "TWILIO_SID",
+    "authToken": "SENDER"
   }
 }
