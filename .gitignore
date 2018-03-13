@@ -22,4 +22,4 @@ npm-debug.log
 .env
 .package-lock.json
 client/public/download/*
-server/datasources.production.json
+/* server/datasources.production.json */
