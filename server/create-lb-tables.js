@@ -16,6 +16,7 @@ var lbTables = [
   'Harmreduction',
   'HearingProtection',
   'HydrationNutrition',
+  'SaferSex',
   'Migration',
   'MigrationMap',
   'TextMessage',

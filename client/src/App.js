@@ -9,12 +9,7 @@ import DrugInfoCardsOld from './containers/drugInfoCardOriginalsContainer';
 import Harmreductions from './containers/harmreductionContainer';
 import HearingProtections from './containers/hearingProtectionContainer';
 import HydrationNutrition from './containers/hydrationNutritionContainer';
-
-const SexualHealth = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-)
+import SaferSex from './containers/saferSexContainer';
 
 const Consent = ({ match }) => (
   <div>
@@ -41,7 +36,7 @@ const App = () => (
     <Route path="/harmreduction" component={Harmreductions}/>
     <Route path="/hydration-nutrition" component={HydrationNutrition}/>
     <Route path="/hearing-protection" component={HearingProtections}/>
-    <Route path="/sexual-health" component={SexualHealth}/>
+    <Route path="/sexual-health" component={SaferSex}/>
     <Route path="/consent" component={Consent}/>
     <Route path="/mapping-the-universe-of-drugs" component={MappingTheUniverseOfDrugs}/>
     <Route path="/drug-info-cards-es" component={DrugInfoCardsEs}/>
