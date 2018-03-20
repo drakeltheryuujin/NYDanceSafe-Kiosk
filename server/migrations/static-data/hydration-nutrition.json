@@ -4,10 +4,10 @@
     "prettyName": "heatstroke",
     "description": "Heatstroke Brochure",
     "displayUrl": {
-      "page1": "/images/page-display/harmreduction/fentanyl-testing.jpg"
+      "page1": "/images/page-display/hydration-nutrition/heatstroke.jpg"
     },
-    "previewUrl": "/images/previews/harmreduction/fentanyl-testing.jpg",
-    "downloadUrl": "https://drive.google.com/open?id=1CUHbYeZb7YfoAibIR4sfKmGCcUcG7aYJ"
+    "previewUrl": "/images/previews/hydration-nutrition/heatstroke.jpg",
+    "downloadUrl": "https://drive.google.com/open?id=1tBt01HlNsBNytXvJ3w-32--XBO5KADTW"
   },
   {
     "name": "Urine Color Chart",
@@ -17,7 +17,7 @@
       "page1": "/images/page-display/hydration-nutrition/urine-color-chart.jpg"
     },
     "previewUrl": "/images/previews/hydration-nutrition/urine-color-chart.jpg",
-    "downloadUrl": "https://drive.google.com/open?id=1tBt01HlNsBNytXvJ3w-32--XBO5KADTW1"
+    "downloadUrl": "https://drive.google.com/open?id=1CUHbYeZb7YfoAibIR4sfKmGCcUcG7aYJ"
   }
 ]
 

@@ -1,28 +1,40 @@
-var async = require('async');
-var psqllDatasourceName = 'dskiosk';
+var appRoot = process.cwd();
+var async = require("async");
+var _ = require("lodash");
+
 
 module.exports = function(app) {
-  //data sources
-  var psqlDs = app.dataSources[psqllDatasourceName];
-  //create all models
-  async.parallel({
-    users: async.apply(createUsers)
-  }, function(err, results) {
-    if (err) throw err;
-    createUsers(results.users, function(err) {
-      if (err) throw err;
-      console.log('> models created sucessfully');
+
+  const User = app.models.User;
+  const Role = app.models.Role;
+  const RoleMapping = app.models.RoleMapping;
+
+  Role.findOrCreate({
+    where: {
+      name: "admin"
+    }
+  }, function(err, role) {
+    if (err) throw err
+
+    console.log(role)
+
+    User.findOrCreate({
+      where: {
+        email: "kellyecodes@gmail.com"
+      }
+    }, function(err, user) {
+
+      console.log(user)
+
+      role.principals.create({
+        principalType: RoleMapping.USER,
+        principalId: user.id
+      }, function(err, principal) {
+        if (err) throw err;
+      });
+      console.log("User created")
     });
   });
-  //create users
-  function createUsers(cb) {
-    psqlDs.automigrate('User', function(err) {
-      if (err) return cb(err);
-      var User = app.models.User;
-      User.create([
-        {email: 'kellyecodes+admin@gmail.com', password: 'password'},
-        {email: 'kellyecodes@gmail.com', password: 'password'}
-      ], cb);
-    });
-  }
+
+  console.log("User Data succesfully migrated")
 };
