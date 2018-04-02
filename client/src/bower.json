@@ -1,0 +1,20 @@
+{
+  "name": "ny-dancesafe-kiosk",
+  "main": "index.js",
+  "homepage": "https://github.com/drakeltheryuujin/NYDanceSafe-Kiosk",
+  "authors": [
+    "Kellye Greene <kellyecodes@gmail.com>"
+  ],
+  "description": "kiosk",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
+}
