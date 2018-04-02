@@ -87,5 +87,13 @@
   "TextMessage": {
     "dataSource": "db",
     "public": true
+  },
+  "EmailMessage": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "mail",
+    "public": false 
   }
 }

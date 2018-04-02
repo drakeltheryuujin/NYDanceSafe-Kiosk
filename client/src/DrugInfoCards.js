@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import _ from 'lodash';
 import Header from './Header';
 import Menu from './DrugInfoCardMenu';
-import TextDataButton from './TextDataButton';
-import ShareDataButton from './ShareDataButton';
+import ShareInfo from './ShareInfo';
 import SocialIcons from './SocialIcons';
 import './assets/css/Sidebar.css';
 import './assets/css/Widgets.css';
-import TextModal from './containers/textModalContainer';
+import { resortDrugsByName } from './utility/util.js';
 
-class Home extends Component {
+
+class DrugInfoCards extends Component {
   constructor( props ) {
 		super( props );
     this.state = {
@@ -21,13 +22,18 @@ class Home extends Component {
         },
       previewUrl: "",
       downloadUrl: "",
-      modalOpen: "false"
+      modalOpen: {
+        current: "none",
+        text: false,
+        email: false,
+        share: false
       }
-      this.updateDrug = this.updateDrug.bind(this);
-      this.openShareModal = this.openShareModal.bind(this);
-      this.openTextModal = this.openTextModal.bind(this);
-      this.closeModal = this.closeModal.bind(this);
     }
+
+    this.updateDrug = this.updateDrug.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
 
   updateDrug(data){
     this.setState({
@@ -39,44 +45,37 @@ class Home extends Component {
     },() => console.log(this.state))
   }
 
-  openTextModal(){
+  openModal(modal){
+    let modalOpen = Object.assign({}, this.state.modalOpen); //copy
+    modalOpen = _.mapValues(this.state.modalOpen, () => false); //make sure all are closed
+    this.setState({modalOpen}) //set to close all modals first
+    modalOpen[modal] = true; //set to open specific modal
+    modalOpen.current = modal; //set current modal
     this.setState({
-      modalOpen: "true"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  openShareModal(){
-    this.setState({
-      modalOpen: "true"
-    },() => console.log(this.state.modalOpen))
+      modalOpen: modalOpen,
+    },() => console.log(this.state.modalOpen)) // sets state with 1 modal open
   }
 
   closeModal(){
-    this.setState({
-        modalOpen: "false"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  resortDrugsByName(a, b) {
-      const drugA = a.prettyName.toUpperCase();
-      const drugB = b.prettyName.toUpperCase();
-
-      let resort = 0;
-      if (drugA > drugB) {
-        resort = 1;
-      } else if (drugA < drugB) {
-        resort = -1;
-      }
-      return resort;
+    let modalOpen = Object.assign({}, this.state.modalOpen);
+    modalOpen = _.mapValues(this.state.modalOpen, () => false);
+    modalOpen.current = "none"; //set current modal
+    this.setState({modalOpen})
   }
 
   renderMenuItems() {
     if(this.props.drugInfoCards) {
       let propsCopy = Object.assign({}, this.props);
-      propsCopy.drugInfoCards = propsCopy.drugInfoCards.sort(this.resortDrugsByName);
-      return <Menu childProps={propsCopy} state={this.state.background} updateDrug={this.updateDrug} />;
+      propsCopy.drugInfoCards = propsCopy.drugInfoCards.sort(resortDrugsByName);
+      return <Menu childProps={propsCopy} state={this.state.background} updateDrug={this.updateDrug}/>;
     } else {
       return <ul className="navigation"><li><a>No Information Loaded</a></li></ul>
+    }
+  }
+
+  renderShareButtons() {
+    if(this.state.currentInfo) {
+      return <ShareInfo url={this.props.match.path} action={this.openModal} currentData={this.state} modal={this.closeModal}/>;
     }
   }
 
@@ -105,19 +104,14 @@ class Home extends Component {
           </nav>
         </div>
 
-        <div className="share-info">
-          <ul>
-            <TextDataButton url={this.props.match.path} action={this.openTextModal}/>
-          </ul>
-        </div>
+        {this.renderShareButtons()}
+
         <div className="banner-bg" id="front" style={{backgroundImage: `url(${this.state.background.page1})`}}></div>
         <div className="banner-bg" id="back" style={{backgroundImage: `url(${this.state.background.page2})`}}></div>
 
-        <TextModal currentData={this.state} modal={this.closeModal}/>
-        {/*<ShareModal currentData={this.state}/>*/}
       </div>
     )
   }
 }
 
-export default Home
+export default DrugInfoCards

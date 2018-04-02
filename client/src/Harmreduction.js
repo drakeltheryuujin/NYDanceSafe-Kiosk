@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import Header from './Header';
 import Menu from './DrugInfoCardMenu';
-import TextDataButton from './TextDataButton';
-import ShareDataButton from './ShareDataButton';
+import ShareInfo from './ShareInfo';
 import SocialIcons from './SocialIcons';
 import './assets/css/Sidebar.css';
 import './assets/css/Widgets.css';
-import TextModal from './containers/textModalContainer';
+import { resortDrugsByName } from './utility/util.js';
 
 class Harmreduction extends Component {
   constructor( props ) {
@@ -58,23 +57,10 @@ class Harmreduction extends Component {
     },() => console.log(this.state.modalOpen))
   }
 
-  resortDrugsByName(a, b) {
-      const drugA = a.prettyName.toUpperCase();
-      const drugB = b.prettyName.toUpperCase();
-
-      let resort = 0;
-      if (drugA > drugB) {
-        resort = 1;
-      } else if (drugA < drugB) {
-        resort = -1;
-      }
-      return resort;
-  }
-
   renderMenuItems() {
     if(this.props.drugInfoCards) {
       let propsCopy = Object.assign({}, this.props);
-      propsCopy.drugInfoCards = propsCopy.drugInfoCards.sort(this.resortDrugsByName);
+      propsCopy.drugInfoCards = propsCopy.drugInfoCards.sort(resortDrugsByName);
       return <Menu childProps={propsCopy} state={this.state.background} updateDrug={this.updateDrug} />;
     } else {
       return <ul className="navigation"><li><a>No Information Loaded</a></li></ul>
@@ -106,11 +92,8 @@ class Harmreduction extends Component {
           </nav>
         </div>
 
-        <div className="share-info">
-          <ul>
-            <TextDataButton url={this.props.match.path} action={this.openTextModal}/>
-          </ul>
-        </div>
+        <ShareInfo url={this.props.match.path} action={this.openModal} currentData={this.state} modal={this.closeModal}/>
+
         <div className="banner-bg full-height" id="front">
           <img src={this.state.background.page1}/>
           if (this.state.background.page2){
@@ -121,8 +104,6 @@ class Harmreduction extends Component {
           }
         </div>
 
-        <TextModal currentData={this.state} modal={this.closeModal}/>
-        {/*<ShareModal currentData={this.state}/>*/}
       </div>
     )
   }

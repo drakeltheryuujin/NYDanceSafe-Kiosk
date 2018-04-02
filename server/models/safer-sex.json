@@ -1,7 +1,7 @@
 {
   "name": "SaferSex",
-  "base": "PersistedModel",
   "plural": "SaferSexes",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true

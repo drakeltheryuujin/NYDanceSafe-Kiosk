@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import Header from './Header';
 import Menu from './DrugInfoCardMenu';
-import TextDataButton from './TextDataButton';
-import ShareDataButton from './ShareDataButton';
+import ShareInfo from './ShareInfo';
 import SocialIcons from './SocialIcons';
 import './assets/css/Sidebar.css';
 import './assets/css/Widgets.css';
-import TextModal from './containers/textModalContainer';
+import { resortDrugsByName } from './utility/util.js';
 
 class SaferSex extends Component {
   constructor( props ) {
@@ -107,11 +106,8 @@ class SaferSex extends Component {
           </nav>
         </div>
 
-        <div className="share-info">
-          <ul>
-            <TextDataButton url={this.props.match.path} action={this.openTextModal}/>
-          </ul>
-        </div>
+        <ShareInfo url={this.props.match.path} action={this.openModal} currentData={this.state} modal={this.closeModal}/>
+
         <div className="banner-bg full-height" id="front">
           <img src={this.state.background.page1}/>
           if (this.state.background.page2){
@@ -122,8 +118,6 @@ class SaferSex extends Component {
           }
         </div>
 
-        <TextModal currentData={this.state} modal={this.closeModal}/>
-        {/*<ShareModal currentData={this.state}/>*/}
       </div>
     )
   }

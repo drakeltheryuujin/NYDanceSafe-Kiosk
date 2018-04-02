@@ -9,5 +9,19 @@
   "twilio": {
     "name": "twilio",
     "connector": "loopback-connector-twilio2"
+  },
+  "mail": {
+    "name": "mail",
+    "connector": "mail",
+    "transports": [{
+      "type": "SMTP",
+      "host": "smtp.gmail.com",
+      "secure": true,
+      "port": 465,
+      "auth": {
+        "user": "newyork@dancesafe.org",
+        "pass": "newyorkdancesafe"
+      }
+    }]
   }
 }

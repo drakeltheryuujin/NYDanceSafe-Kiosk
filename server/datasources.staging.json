@@ -11,5 +11,19 @@
     "accountSid": "AC1a4a8c925ae81a6ece32b5efc4c4dcb5",
     "authToken": "22616b58b3b73984a36809a9bc666324",
     "apiToken": "../.env"
+  },
+  "mail": {
+    "name": "mail",
+    "connector": "mail",
+    "transports": [{
+      "type": "SMTP",
+      "host": "smtp.gmail.com",
+      "secure": true,
+      "port": 465,
+      "auth": {
+        "user": "newyork@dancesafe.org",
+        "pass": "newyorkdancesafe"
+      }
+    }]
   }
 }

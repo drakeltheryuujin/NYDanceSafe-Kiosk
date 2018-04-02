@@ -1,5 +1,5 @@
 import axios from 'axios';
-import apiUrl from '../utility/util.js';
+import { apiUrl } from '../utility/util.js';
 
 function getSaferSexSuccess(response) {
   return {

@@ -20,6 +20,7 @@ var lbTables = [
   'Migration',
   'MigrationMap',
   'TextMessage',
+  'EmailMessage'
 ]
 
 

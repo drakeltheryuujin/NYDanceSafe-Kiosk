@@ -10,5 +10,19 @@
     "connector": "loopback-connector-twilio2",
     "accountSid": "TWILIO_SID",
     "authToken": "SENDER"
+  },
+  "mail": {
+    "name": "mail",
+    "connector": "mail",
+    "transports": [{
+      "type": "SMTP",
+      "host": "smtp.gmail.com",
+      "secure": true,
+      "port": 465,
+      "auth": {
+        "user": "newyork@dancesafe.org",
+        "pass": "newyorkdancesafe"
+      }
+    }]
   }
 }
