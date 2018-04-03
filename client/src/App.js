@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom'
 import './assets/css/bootstrap.min.css';
 import './assets/css/font-awesome.css';
@@ -14,36 +14,18 @@ import Consent from './containers/saferSexContainer';
 import MappingTheUniverseOfDrugs from './containers/saferSexContainer';
 import DrugInfoCardsEs from './containers/saferSexContainer';
 
-const AddPropsToRoute = (WrappedComponent, passedProps)=>{
-    return (
-        class Route extends Component{
-            render(){
-                let props = Object.assign({}, this.props, passedProps)
-                return  <WrappedComponent {...props} />
-            }
-        }
-    )
-}
-
-
-class App extends Component {
-
-  render() {
-    return (
-      <div>
-        <Route exact path="/" component={Home}/>
-        <Route path="/drug-info-cards" component={DrugInfoCards}/>
-        <Route path="/harmreduction" component={Harmreductions}/>
-        <Route path="/hydration-nutrition" component={HydrationNutrition}/>
-        <Route path="/hearing-protection" component={HearingProtections}/>
-        <Route path="/sexual-health" component={SaferSex}/>
-        <Route path="/consent" component={Consent}/>
-        <Route path="/mapping-the-universe-of-drugs" component={MappingTheUniverseOfDrugs}/>
-        <Route path="/drug-info-cards-es" component={DrugInfoCardsEs}/>
-        <Route path="/drug-info-cards-old" component={DrugInfoCardsOld}/>
-      </div>
-    );
-  }
-};
-
+const App = () => (
+  <div>
+    <Route exact path="/" component={Home}/>
+    <Route path="/drug-info-cards" component={DrugInfoCards}/>
+    <Route path="/harmreduction" component={Harmreductions}/>
+    <Route path="/hydration-nutrition" component={HydrationNutrition}/>
+    <Route path="/hearing-protection" component={HearingProtections}/>
+    <Route path="/sexual-health" component={SaferSex}/>
+    <Route path="/consent" component={Consent}/>
+    <Route path="/mapping-the-universe-of-drugs" component={MappingTheUniverseOfDrugs}/>
+    <Route path="/drug-info-cards-es" component={DrugInfoCardsEs}/>
+    <Route path="/drug-info-cards-old" component={DrugInfoCardsOld}/>
+  </div>
+)
 export default App

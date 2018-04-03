@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './assets/css/Widgets.css';
 import sendEmailMessage from './actions/emailModalAction'
 import sendTextMessage from './actions/textModalAction'
-import modalContainer from './containers/modalContainer'
 
 class Modal extends Component {
   constructor(props) {

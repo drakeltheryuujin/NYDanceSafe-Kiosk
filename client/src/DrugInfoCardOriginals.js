@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import Header from './Header';
 import Menu from './DrugInfoCardMenu';
 import ShareInfo from './ShareInfo';
@@ -19,14 +18,10 @@ class DrugInfoCardOriginal extends Component {
         page2: "/images/page-display/default.jpg"
         },
       previewUrl: "",
-      downloadUrl: "",
-      modalOpen: "false"
-      }
-      this.updateDrug = this.updateDrug.bind(this);
-      this.openShareModal = this.openShareModal.bind(this);
-      this.openTextModal = this.openTextModal.bind(this);
-      this.closeModal = this.closeModal.bind(this);
+      downloadUrl: ""
     }
+    this.updateDrug = this.updateDrug.bind(this);
+  }
 
   updateDrug(data){
     this.setState({
@@ -38,24 +33,6 @@ class DrugInfoCardOriginal extends Component {
     },() => console.log(this.state))
   }
 
-  openTextModal(){
-    this.setState({
-      modalOpen: "true"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  openShareModal(){
-    this.setState({
-      modalOpen: "true"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  closeModal(){
-    this.setState({
-        modalOpen: "false"
-    },() => console.log(this.state.modalOpen))
-  }
-
   renderMenuItems() {
     if(this.props.drugInfoCards) {
       let propsCopy = Object.assign({}, this.props);
@@ -63,6 +40,12 @@ class DrugInfoCardOriginal extends Component {
       return <Menu childProps={propsCopy} state={this.state.background} updateDrug={this.updateDrug} />;
     } else {
       return <ul className="navigation"><li><a>No Information Loaded</a></li></ul>
+    }
+  }
+ 
+  renderShareButtons() {
+    if(this.state.currentInfo) {
+      return <ShareInfo url={this.props.match.path} currentData={this.state} />;
     }
   }
 
@@ -91,10 +74,10 @@ class DrugInfoCardOriginal extends Component {
           </nav>
         </div>
 
-        <ShareInfo url={this.props.match.path} action={this.openModal} currentData={this.state} modal={this.closeModal}/>
+        {this.renderShareButtons()}
 
         <div className="banner-bg full-height" id="front">
-          <img src={this.state.background.page1}/>
+          <img src={this.state.background.page1} alt={this.state.description}/>
         </div>
 
       </div>

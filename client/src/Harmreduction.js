@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import Header from './Header';
 import Menu from './DrugInfoCardMenu';
 import ShareInfo from './ShareInfo';
@@ -20,14 +19,10 @@ class Harmreduction extends Component {
         page3: "/images/page-display/default.jpg"
         },
       previewUrl: "",
-      downloadUrl: "",
-      modalOpen: "false"
-      }
-      this.updateDrug = this.updateDrug.bind(this);
-      this.openShareModal = this.openShareModal.bind(this);
-      this.openTextModal = this.openTextModal.bind(this);
-      this.closeModal = this.closeModal.bind(this);
+      downloadUrl: ""
     }
+    this.updateDrug = this.updateDrug.bind(this);
+  }
 
   updateDrug(data){
     this.setState({
@@ -39,24 +34,6 @@ class Harmreduction extends Component {
     },() => console.log(this.state))
   }
 
-  openTextModal(){
-    this.setState({
-      modalOpen: "true"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  openShareModal(){
-    this.setState({
-      modalOpen: "true"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  closeModal(){
-    this.setState({
-        modalOpen: "false"
-    },() => console.log(this.state.modalOpen))
-  }
-
   renderMenuItems() {
     if(this.props.drugInfoCards) {
       let propsCopy = Object.assign({}, this.props);
@@ -64,6 +41,12 @@ class Harmreduction extends Component {
       return <Menu childProps={propsCopy} state={this.state.background} updateDrug={this.updateDrug} />;
     } else {
       return <ul className="navigation"><li><a>No Information Loaded</a></li></ul>
+    }
+  }
+
+  renderShareButtons() {
+    if(this.state.currentInfo) {
+      return <ShareInfo url={this.props.match.path} currentData={this.state} />;
     }
   }
 
@@ -92,15 +75,15 @@ class Harmreduction extends Component {
           </nav>
         </div>
 
-        <ShareInfo url={this.props.match.path} action={this.openModal} currentData={this.state} modal={this.closeModal}/>
+        {this.renderShareButtons()}
 
         <div className="banner-bg full-height" id="front">
-          <img src={this.state.background.page1}/>
+          <img src={this.state.background.page1} alt={this.state.description}/>
           if (this.state.background.page2){
-            <img src={this.state.background.page2}/>
+            <img src={this.state.background.page2} alt={this.state.description}/>
           }
           if (this.state.background.page3){
-          <img src={this.state.background.page3}/>
+          <img src={this.state.background.page3} alt={this.state.description}/>
           }
         </div>
 

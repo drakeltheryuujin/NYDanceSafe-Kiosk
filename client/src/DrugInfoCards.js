@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Header from './Header';
 import Menu from './DrugInfoCardMenu';
 import ShareInfo from './ShareInfo';
@@ -7,7 +6,6 @@ import SocialIcons from './SocialIcons';
 import './assets/css/Sidebar.css';
 import './assets/css/Widgets.css';
 import { resortDrugsByName } from './utility/util.js';
-
 
 class DrugInfoCards extends Component {
   constructor( props ) {

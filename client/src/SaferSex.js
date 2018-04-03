@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import Header from './Header';
 import Menu from './DrugInfoCardMenu';
 import ShareInfo from './ShareInfo';
@@ -21,12 +20,8 @@ class SaferSex extends Component {
         },
       previewUrl: "",
       downloadUrl: "",
-      modalOpen: "false"
       }
       this.updateDrug = this.updateDrug.bind(this);
-      this.openShareModal = this.openShareModal.bind(this);
-      this.openTextModal = this.openTextModal.bind(this);
-      this.closeModal = this.closeModal.bind(this);
     }
 
   updateDrug(data){
@@ -39,44 +34,19 @@ class SaferSex extends Component {
     },() => console.log(this.state))
   }
 
-  openTextModal(){
-    this.setState({
-      modalOpen: "true"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  openShareModal(){
-    this.setState({
-      modalOpen: "true"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  closeModal(){
-    this.setState({
-        modalOpen: "false"
-    },() => console.log(this.state.modalOpen))
-  }
-
-  resortDrugsByName(a, b) {
-      const drugA = a.prettyName.toUpperCase();
-      const drugB = b.prettyName.toUpperCase();
-
-      let resort = 0;
-      if (drugA > drugB) {
-        resort = 1;
-      } else if (drugA < drugB) {
-        resort = -1;
-      }
-      return resort;
-  }
-
   renderMenuItems() {
     if(this.props.drugInfoCards) {
       let propsCopy = Object.assign({}, this.props);
-      propsCopy.drugInfoCards = propsCopy.drugInfoCards.sort(this.resortDrugsByName);
+      propsCopy.drugInfoCards = propsCopy.drugInfoCards.sort(resortDrugsByName);
       return <Menu childProps={propsCopy} state={this.state.background} updateDrug={this.updateDrug} />;
     } else {
       return <ul className="navigation"><li><a>No Information Loaded</a></li></ul>
+    }
+  }
+
+  renderShareButtons() {
+    if(this.state.currentInfo) {
+      return <ShareInfo url={this.props.match.path} currentData={this.state} />;
     }
   }
 
@@ -106,15 +76,15 @@ class SaferSex extends Component {
           </nav>
         </div>
 
-        <ShareInfo url={this.props.match.path} action={this.openModal} currentData={this.state} modal={this.closeModal}/>
+        {this.renderShareButtons()}
 
         <div className="banner-bg full-height" id="front">
-          <img src={this.state.background.page1}/>
+          <img src={this.state.background.page1} alt={this.state.description}/>
           if (this.state.background.page2){
-            <img src={this.state.background.page2}/>
+            <img src={this.state.background.page2}  alt={this.state.description}/>
           }
           if (this.state.background.page3){
-          <img src={this.state.background.page3}/>
+          <img src={this.state.background.page3} alt={this.state.description}/>
           }
         </div>
 
