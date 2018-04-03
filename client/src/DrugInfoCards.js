@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import _ from 'lodash';
 import Header from './Header';
 import Menu from './DrugInfoCardMenu';
 import ShareInfo from './ShareInfo';
@@ -21,18 +20,9 @@ class DrugInfoCards extends Component {
         page2: "/images/page-display/default.jpg"
         },
       previewUrl: "",
-      downloadUrl: "",
-      modalOpen: {
-        current: "none",
-        text: false,
-        email: false,
-        share: false
-      }
+      downloadUrl: ""
     }
-
     this.updateDrug = this.updateDrug.bind(this);
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
   }
 
   updateDrug(data){
@@ -43,24 +33,6 @@ class DrugInfoCards extends Component {
       previewUrl: data.previewUrl,
       downloadUrl: data.downloadUrl
     },() => console.log(this.state))
-  }
-
-  openModal(modal){
-    let modalOpen = Object.assign({}, this.state.modalOpen); //copy
-    modalOpen = _.mapValues(this.state.modalOpen, () => false); //make sure all are closed
-    this.setState({modalOpen}) //set to close all modals first
-    modalOpen[modal] = true; //set to open specific modal
-    modalOpen.current = modal; //set current modal
-    this.setState({
-      modalOpen: modalOpen,
-    },() => console.log(this.state.modalOpen)) // sets state with 1 modal open
-  }
-
-  closeModal(){
-    let modalOpen = Object.assign({}, this.state.modalOpen);
-    modalOpen = _.mapValues(this.state.modalOpen, () => false);
-    modalOpen.current = "none"; //set current modal
-    this.setState({modalOpen})
   }
 
   renderMenuItems() {
@@ -75,7 +47,7 @@ class DrugInfoCards extends Component {
 
   renderShareButtons() {
     if(this.state.currentInfo) {
-      return <ShareInfo url={this.props.match.path} action={this.openModal} currentData={this.state} modal={this.closeModal}/>;
+      return <ShareInfo url={this.props.match.path} currentData={this.state} />;
     }
   }
 

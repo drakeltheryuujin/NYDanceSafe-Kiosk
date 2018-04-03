@@ -35,12 +35,12 @@ class Modal extends Component {
     event.preventDefault();
     let contactInfo = this.state.contactInfo;
     let isValidContact;
-    
-    if (this.props.currentData.modalOpen.current === "text") {
+
+    if (this.props.modalOpen.current === "text") {
       let numberRegEx = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
       isValidContact = contactInfo.match(numberRegEx)
       this.sendAction(isValidContact)
-    } else if (this.props.currentData.modalOpen.current === "email") {
+    } else if (this.props.modalOpen.current === "email") {
       let emailRegEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       isValidContact = contactInfo.match(emailRegEx)
       this.sendAction(isValidContact)
@@ -50,10 +50,10 @@ class Modal extends Component {
   sendAction(isValidContact) {
     if(isValidContact !== null && isValidContact.input) {
       console.log('Form submitted with these values: ' + JSON.stringify(this.state));
-      if (this.props.currentData.modalOpen.current === "text") {
+      if (this.props.modalOpen.current === "text") {
         sendTextMessage(this.state)
       }
-      if (this.props.currentData.modalOpen.current === "email") {
+      if (this.props.modalOpen.current === "email") {
         sendEmailMessage(this.state)
       }
     }else{
@@ -71,7 +71,7 @@ class Modal extends Component {
   }
 
   renderModalBody() {
-    if (this.props.currentData.modalOpen.text === true){
+    if (this.props.modalOpen.text === true){
       return(
         <div className="row">
           <div className="col-md-4">
@@ -102,7 +102,7 @@ class Modal extends Component {
           </div>
         </div>
       )
-    } else if (this.props.currentData.modalOpen.email === true ) {
+    } else if (this.props.modalOpen.email === true ) {
       return(
         <div className="row">
           <div className="col-md-4">
@@ -134,7 +134,7 @@ class Modal extends Component {
         </div>
       )
     } // <!-- Logging in for social sharing in this manner seems tedious, scratch it... for now -->
-    //else if (this.props.currentData.modalOpen.share === true ) {
+    //else if (this.props.modalOpen.share === true ) {
       // return(
         // <div className="row">
           // <div className="col-md-4">
@@ -178,7 +178,7 @@ class Modal extends Component {
     // } else {
       // return <h4>What?</h4>
     // }
-    else if (this.props.currentData.modalOpen.social === true ) {
+    else if (this.props.modalOpen.social === true ) {
       return(
         <div className="row">
           <div className="col-md-12 text-center">
@@ -192,15 +192,15 @@ class Modal extends Component {
 
   render() {
     let visibility;
-    if (this.props.currentData.modalOpen.current === "none") {
+    if (this.props.modalOpen.current === "none") {
       visibility = false;
     } else {
       visibility = true;
     }
 
 	  return(
-      <div className={`share-modal modal-visibility-${visibility}`}  id={`${this.props.currentData.modalOpen.current}_modal`}>
-        <div className="close-modal" onClick={ () => this.props.modal() }><i className="fa fa-times"></i></div>        
+      <div className={`share-modal modal-visibility-${visibility}`}  id={`${this.props.modalOpen.current}_modal`}>
+        <div className="close-modal" onClick={ () => this.props.modal() }><i className="fa fa-times"></i></div>
         {this.renderModalBody()}
       </div>
     )
