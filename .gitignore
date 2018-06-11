@@ -24,3 +24,4 @@ npm-debug.log
 client/public/download/*
 /* server/datasources.production.json */
 DSKiosk3-13MacBook
+/node_modules

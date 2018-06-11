@@ -17,7 +17,7 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin()
   ],
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
       loaders: ['babel-loader'],
       exclude: /node_modules/,

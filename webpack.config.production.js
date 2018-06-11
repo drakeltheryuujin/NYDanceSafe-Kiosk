@@ -11,7 +11,7 @@ module.exports = {
     publicPath: '/.build'
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
       loaders: ['babel-loader'],
       exclude: /node_modules/,
