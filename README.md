@@ -13,28 +13,22 @@ $ git clone https://github.com/drakeltheryuujin/NYDanceSafe-Kiosk
 # npm
 $ npm install
 ```
+
 - **Start the server (default port is set to 3001)**
 ```bash
-# npm
-$ npm start
+# node
+$ node .
 ```
-### Enable Node Autostart
-'Enabling autostart' means to make the OS run a certain command at logon of the user who 'enabled the autostart' via a program:
+- **Run client side**
 ```
-  autostart enable -n "DanceSafeKiosk" -p /home/me/kiosk-loopback -c "npm start"
+cd client
+npm start
 ```
-to enable,
-```
-  autostart check -n "DanceSafeKiosk"
-```
-to see if it is enabled, and:
-```
-  autostart disable -n "DanceSafeKiosk"
-```
-to disable it.
 
+### Creating New Tables
+```
+  node server/create-lb-tables.js
+```
 ### Scripts
-- **npm run clean** or **yarn clean**: Removes the bundled files.
-
-Enable node-autostart
+- **npm run clean**: Removes the bundled files.
 
